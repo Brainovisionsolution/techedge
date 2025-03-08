@@ -88,11 +88,11 @@ const Home = () => {
           <div className="h-32 bg-white/10 backdrop-blur-md border-b border-white/20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
               <div className="flex space-x-8">
-                <img src="logoss\aiefrlogo.png" alt="AIEFR" className="h-16" />
-                <img src="logoss\anuvadini.png" alt="ANUVADINI" className="h-16" />
-                <img src="logoss\bovyellow.png" alt="BRAIN O VISION" className="h-16" />
-                <img src="logoss\neat.png" alt="N.E.A.T" className="h-16" />
-                <img src="logoss\2.png" alt="AICTE" className="h-16" />
+                <img src="pages/logoss\aiefrlogo.png" alt="AIEFR" className="h-16" />
+                <img src="pages/logoss\anuvadini.png" alt="ANUVADINI" className="h-16" />
+                <img src="pages/logoss\bovyellow.png" alt="BRAIN O VISION" className="h-16" />
+                <img src="pages/logoss\neat.png" alt="N.E.A.T" className="h-16" />
+                <img src="pages/logoss\2.png" alt="AICTE" className="h-16" />
               </div>
             </div>
           </div>
