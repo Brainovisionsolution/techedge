@@ -11,7 +11,7 @@ const Footer = () => {
             <span className="text-xl font-bold text-white">BrainoVision</span>
           </div>
           <div className="text-gray-300 text-sm">
-            © 2024 BrainoVision. All rights reserved.
+            © 2025 BrainoVision Solutions India Pvt. Ltd. All rights reserved.
           </div>
         </div>
       </div>

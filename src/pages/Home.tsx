@@ -16,7 +16,7 @@ const programs = [
   {
     id: 'ai-faculty',
     title: 'NATIONAL LEVEL FACULTY DEVELOPMENT PROGRAM (FDP) ON ARTIFICIAL INTELLIGENCE (AI)',
-    status: 'active',
+    status: 'completed',
     dates: '17th - 21th, FEB 2025',
     time: '07:00 PM to 09:00 PM',
     audience: 'All Faculties',
@@ -26,7 +26,7 @@ const programs = [
   {
     id: 'essential-skills',
     title: 'INTERNATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
-    status: 'coming_soon',
+    status: 'active',
     dates: '07th - 11th, APR 2025',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
@@ -88,11 +88,11 @@ const Home = () => {
           <div className="h-32 bg-white/10 backdrop-blur-md border-b border-white/20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
               <div className="flex space-x-8">
-                <img src="https://example.com/aiefr-logo.png" alt="AIEFR" className="h-16" />
-                <img src="https://example.com/anuvadini-logo.png" alt="ANUVADINI" className="h-16" />
-                <img src="https://example.com/brainovision-logo.png" alt="BRAIN O VISION" className="h-16" />
-                <img src="https://example.com/neat-logo.png" alt="N.E.A.T" className="h-16" />
-                <img src="https://example.com/aicte-logo.png" alt="AICTE" className="h-16" />
+                <img src="project/logoss\aiefrlogo.png" alt="AIEFR" className="h-16" />
+                <img src="project\logoss\anuvadini.png" alt="ANUVADINI" className="h-16" />
+                <img src="project\logoss\bovyellow.png" alt="BRAIN O VISION" className="h-16" />
+                <img src="project\logoss\neat.png" alt="N.E.A.T" className="h-16" />
+                <img src="project\logoss\2.png" alt="AICTE" className="h-16" />
               </div>
             </div>
           </div>
