@@ -8,7 +8,7 @@ import ProgramDetails from './pages/ProgramDetails';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-900">
+      <div className="min-h-screen bg-[#1E1656]">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

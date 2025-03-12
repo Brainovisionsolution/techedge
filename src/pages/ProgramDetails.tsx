@@ -275,179 +275,179 @@ const ProgramDetails = () => {
   const program = programs[id as keyof typeof programs];
 
   if (!program) {
-    return <div className="text-white text-center py-12">Program not found</div>;
+    return (
+      <div className="pt-16 min-h-screen bg-[#1E1656] flex items-center justify-center">
+        <div className="text-[#00D1FF] text-xl">Program not found</div>
+      </div>
+    );
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 border border-white/20">
-        <h1 className="text-3xl font-bold text-white mb-8">{program.title}</h1>
+    <div className="pt-16 min-h-screen bg-[#1E1656]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="bg-[#1E1656]/50 backdrop-blur-md rounded-lg p-8 border border-[#00D1FF]/20">
+          <h1 className="text-3xl font-bold text-[#00D1FF] mb-8">{program.title}</h1>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3 text-gray-300">
-              <Calendar className="h-5 w-5 text-cyan-400" />
-              <span>{program.dates}</span>
-            </div>
-            <div className="flex items-center space-x-3 text-gray-300">
-              <Clock className="h-5 w-5 text-cyan-400" />
-              <span>{program.time}</span>
-            </div>
-            <div className="flex items-center space-x-3 text-gray-300">
-              <Users className="h-5 w-5 text-cyan-400" />
-              <span>{program.audience}</span>
-            </div>
-            <div className="flex items-center space-x-3 text-yellow-400">
-              <Award className="h-5 w-5" />
-              <span>Participation Fee: ₹{program.fee}</span>
-            </div>
-          </div>
-          <div className="space-y-4">
-            <button className="w-full bg-cyan-400 text-black py-2 px-4 rounded-md hover:bg-cyan-300 transition-colors flex items-center justify-center space-x-2">
-              <FileText className="h-5 w-5" />
-              <span>Host College Registration</span>
-            </button>
-            <button className="w-full bg-green-400 text-black py-2 px-4 rounded-md hover:bg-green-300 transition-colors flex items-center justify-center space-x-2">
-              <Users className="h-5 w-5" />
-              <span>Student Registration</span>
-            </button>
-            <button className="w-full bg-purple-400 text-black py-2 px-4 rounded-md hover:bg-purple-300 transition-colors flex items-center justify-center space-x-2">
-              <Download className="h-5 w-5" />
-              <span>Download Brochure</span>
-            </button>
-          </div>
-        </div>
-
-        <div className="space-y-12">
-          {/* Chief Guest Section */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Chief Guest</h2>
-            <div className="bg-white/5 rounded-lg p-6">
-              <div className="flex items-center space-x-6">
-                <img
-                  src={program.overview.chiefGuest.photo}
-                  alt={program.overview.chiefGuest.name}
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-                <div>
-                  <h3 className="text-xl font-semibold text-yellow-400">{program.overview.chiefGuest.name}</h3>
-                  <p className="text-cyan-400">{program.overview.chiefGuest.title}</p>
-                  <p className="text-gray-300 mt-2">{program.overview.chiefGuest.bio}</p>
-                </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3 text-gray-300">
+                <Calendar className="h-5 w-5 text-[#FFD700]" />
+                <span>{program.dates}</span>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-300">
+                <Clock className="h-5 w-5 text-[#FFD700]" />
+                <span>{program.time}</span>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-300">
+                <Users className="h-5 w-5 text-[#FFD700]" />
+                <span>{program.audience}</span>
+              </div>
+              <div className="flex items-center space-x-3 text-[#FFD700]">
+                <Award className="h-5 w-5" />
+                <span>Participation Fee: ₹{program.fee}</span>
               </div>
             </div>
-          </section>
+            <div className="space-y-4">
+              <button className="w-full bg-[#00D1FF] text-black py-2 px-4 rounded-md hover:bg-[#00D1FF]/90 transition-colors flex items-center justify-center space-x-2 font-semibold">
+                <FileText className="h-5 w-5" />
+                <span>Host College Registration</span>
+              </button>
+              <button className="w-full bg-[#FFD700] text-black py-2 px-4 rounded-md hover:bg-[#FFD700]/90 transition-colors flex items-center justify-center space-x-2 font-semibold">
+                <Users className="h-5 w-5" />
+                <span>Student Registration</span>
+              </button>
+              <button className="w-full bg-gradient-to-r from-[#00D1FF] to-[#FFD700] text-black py-2 px-4 rounded-md hover:from-[#00D1FF]/90 hover:to-[#FFD700]/90 transition-all flex items-center justify-center space-x-2 font-semibold">
+                <Download className="h-5 w-5" />
+                <span>Download Brochure</span>
+              </button>
+            </div>
+          </div>
 
-          {/* Core Team Section */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Core Team</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {program.overview.coreTeam.map((member, index) => (
-                <div key={index} className="bg-white/5 rounded-lg p-6">
-                  <div className="flex items-center space-x-4">
-                    <img
-                      src={member.photo}
-                      alt={member.name}
-                      className="w-20 h-20 rounded-full object-cover"
-                    />
-                    <div>
-                      <h3 className="text-lg font-semibold text-yellow-400">{member.name}</h3>
-                      <p className="text-cyan-400">{member.title}</p>
-                      <p className="text-gray-300 mt-2">{member.bio}</p>
-                    </div>
+          <div className="space-y-12">
+            <section>
+              <h2 className="text-2xl font-bold text-[#00D1FF] mb-6">Chief Guest</h2>
+              <div className="bg-white/5 rounded-lg p-6 border border-[#00D1FF]/20">
+                <div className="flex items-center space-x-6">
+                  <img
+                    src={program.overview.chiefGuest.photo}
+                    alt={program.overview.chiefGuest.name}
+                    className="w-24 h-24 rounded-full object-cover border-2 border-[#FFD700]"
+                  />
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#FFD700]">{program.overview.chiefGuest.name}</h3>
+                    <p className="text-[#00D1FF]">{program.overview.chiefGuest.title}</p>
+                    <p className="text-gray-300 mt-2">{program.overview.chiefGuest.bio}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Lead Trainer Section */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Lead Trainer</h2>
-            <div className="bg-white/5 rounded-lg p-6">
-              <div className="flex items-center space-x-6">
-                <img
-                  src={program.overview.leadTrainer.photo}
-                  alt={program.overview.leadTrainer.name}
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-                <div>
-                  <h3 className="text-xl font-semibold text-yellow-400">{program.overview.leadTrainer.name}</h3>
-                  <p className="text-cyan-400">{program.overview.leadTrainer.title}</p>
-                  <p className="text-gray-300 mt-2">{program.overview.leadTrainer.bio}</p>
-                </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          {/* Program Syllabus */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Program Syllabus</h2>
-            <div className="bg-white/5 rounded-lg p-6">
-              <ul className="space-y-3">
-                {program.overview.syllabus.map((item, index) => (
-                  <li key={index} className="flex items-center space-x-3 text-gray-300">
-                    <Brain className="h-5 w-5 text-cyan-400 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
+            <section>
+              <h2 className="text-2xl font-bold text-[#00D1FF] mb-6">Core Team</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {program.overview.coreTeam.map((member, index) => (
+                  <div key={index} className="bg-white/5 rounded-lg p-6 border border-[#00D1FF]/20">
+                    <div className="flex items-center space-x-4">
+                      <img
+                        src={member.photo}
+                        alt={member.name}
+                        className="w-20 h-20 rounded-full object-cover border-2 border-[#FFD700]"
+                      />
+                      <div>
+                        <h3 className="text-lg font-semibold text-[#FFD700]">{member.name}</h3>
+                        <p className="text-[#00D1FF]">{member.title}</p>
+                        <p className="text-gray-300 mt-2">{member.bio}</p>
+                      </div>
+                    </div>
+                  </div>
                 ))}
-              </ul>
-            </div>
-          </section>
+              </div>
+            </section>
 
-          {/* Certificates Section */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Sample Certificates</h2>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="space-y-6">
-                <div className="bg-white/5 rounded-lg p-4">
-                  <h3 className="text-lg font-semibold text-yellow-400 mb-4">College Certificate</h3>
-                  <img src={program.certificates.college} alt="College Certificate" className="w-full rounded-lg" />
-                </div>
-                <div className="bg-white/5 rounded-lg p-4">
-                  <h3 className="text-lg font-semibold text-yellow-400 mb-4">Department Certificate</h3>
-                  <img src={program.certificates.department} alt="Department Certificate" className="w-full rounded-lg" />
-                </div>
-              </div>
-              <div className="space-y-6">
-                <div className="bg-white/5 rounded-lg p-4">
-                  <h3 className="text-lg font-semibold text-yellow-400 mb-4">Student Certificate</h3>
-                  <img src={program.certificates.student} alt="Student Certificate" className="w-full rounded-lg" />
-                </div>
-                <div className="bg-white/5 rounded-lg p-4">
-                  <h3 className="text-lg font-semibold text-yellow-400 mb-4">Faculty Certificate</h3>
-                  <img src={program.certificates.faculty} alt="Faculty Certificate" className="w-full rounded-lg" />
+            <section>
+              <h2 className="text-2xl font-bold text-[#00D1FF] mb-6">Lead Trainer</h2>
+              <div className="bg-white/5 rounded-lg p-6 border border-[#00D1FF]/20">
+                <div className="flex items-center space-x-6">
+                  <img
+                    src={program.overview.leadTrainer.photo}
+                    alt={program.overview.leadTrainer.name}
+                    className="w-24 h-24 rounded-full object-cover border-2 border-[#FFD700]"
+                  />
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#FFD700]">{program.overview.leadTrainer.name}</h3>
+                    <p className="text-[#00D1FF]">{program.overview.leadTrainer.title}</p>
+                    <p className="text-gray-300 mt-2">{program.overview.leadTrainer.bio}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          {/* Registrations Section */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-6">Registrations</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-yellow-400 mb-4">College Registrations</h3>
-                <div className="bg-white/5 rounded-lg p-4 h-96">
-                  <iframe
-                    src={program.registrationSheets.colleges}
-                    className="w-full h-full"
-                    frameBorder="0"
-                  ></iframe>
+            <section>
+              <h2 className="text-2xl font-bold text-[#00D1FF] mb-6">Program Syllabus</h2>
+              <div className="bg-white/5 rounded-lg p-6 border border-[#00D1FF]/20">
+                <ul className="space-y-3">
+                  {program.overview.syllabus.map((item, index) => (
+                    <li key={index} className="flex items-center space-x-3 text-gray-300">
+                      <Brain className="h-5 w-5 text-[#FFD700] flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#00D1FF] mb-6">Sample Certificates</h2>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="space-y-6">
+                  <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20">
+                    <h3 className="text-lg font-semibold text-[#FFD700] mb-4">College Certificate</h3>
+                    <img src={program.certificates.college} alt="College Certificate" className="w-full rounded-lg" />
+                  </div>
+                  <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20">
+                    <h3 className="text-lg font-semibold text-[#FFD700] mb-4">Department Certificate</h3>
+                    <img src={program.certificates.department} alt="Department Certificate" className="w-full rounded-lg" />
+                  </div>
+                </div>
+                <div className="space-y-6">
+                  <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20">
+                    <h3 className="text-lg font-semibold text-[#FFD700] mb-4">Student Certificate</h3>
+                    <img src={program.certificates.student} alt="Student Certificate" className="w-full rounded-lg" />
+                  </div>
+                  <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20">
+                    <h3 className="text-lg font-semibold text-[#FFD700] mb-4">Faculty Certificate</h3>
+                    <img src={program.certificates.faculty} alt="Faculty Certificate" className="w-full rounded-lg" />
+                  </div>
                 </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-yellow-400 mb-4">Student Registrations</h3>
-                <div className="bg-white/5 rounded-lg p-4 h-96">
-                  <iframe
-                    src={program.registrationSheets.students}
-                    className="w-full h-full"
-                    frameBorder="0"
-                  ></iframe>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#00D1FF] mb-6">Registrations</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-[#FFD700] mb-4">College Registrations</h3>
+                  <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20 h-96">
+                    <iframe
+                      src={program.registrationSheets.colleges}
+                      className="w-full h-full"
+                      frameBorder="0"
+                    ></iframe>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-[#FFD700] mb-4">Student Registrations</h3>
+                  <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20 h-96">
+                    <iframe
+                      src={program.registrationSheets.students}
+                      className="w-full h-full"
+                      frameBorder="0"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
     </div>
