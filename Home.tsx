@@ -89,10 +89,10 @@ const Home = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
               <div className="flex space-x-8">
                 <img src="/logos/aiefrlogo.png" alt="AIEFR" className="h-20 opacity-100" />
-            <img src="/logos/anuvadini.png" alt="ANUVADINI" className="h-12 opacity-90" />
-            <img src="/logos/bovyellow.png" alt="BRAIN O VISION" className="h-12 opacity-90" />
-            <img src="/logos/neat.png" alt="N.E.A.T" className="h-12 opacity-90" />
-            <img src="/logos/aicte.png" alt="AICTE" className="h-12 opacity-90" />
+            <img src="/logos/anuvadini.png" alt="ANUVADINI" className="h-20 opacity-100" />
+            <img src="/logos/bovyellow.png" alt="BRAIN O VISION" className="h-20 opacity-100" />
+            <img src="/logos/neat.png" alt="N.E.A.T" className="h-20 opacity-100" />
+            <img src="/logos/aicte.png" alt="AICTE" className="h-20 opacity-100" />
               </div>
             </div>
           </div>
