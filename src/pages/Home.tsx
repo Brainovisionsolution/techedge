@@ -28,7 +28,7 @@ const programs = [
   {
     id: 'essential-skills',
     title: 'INTERNATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
-    status: 'completed',
+    status: 'active',
     dates: '07th - 11th, APR 2025',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
