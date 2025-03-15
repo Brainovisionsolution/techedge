@@ -17,7 +17,7 @@ const programs = [
   {
     id: 'ai-faculty',
     title: 'NATIONAL LEVEL FACULTY DEVELOPMENT PROGRAM (FDP) ON ARTIFICIAL INTELLIGENCE (AI)',
-    status: 'active',
+    status: 'completed',
     dates: '17th - 21th, FEB 2025',
     time: '07:00 PM to 09:00 PM',
     audience: 'All Faculties',
@@ -28,7 +28,7 @@ const programs = [
   {
     id: 'essential-skills',
     title: 'INTERNATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
-    status: 'coming_soon',
+    status: 'completed',
     dates: '07th - 11th, APR 2025',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
@@ -85,8 +85,8 @@ const processSteps = [
 
 const achievements = [
   {
-    number: "50+",
-    text: "Training Programs",
+    number: "650+",
+    text: "Workshops & Hackathons",
     icon: Brain
   },
   {
@@ -100,8 +100,8 @@ const achievements = [
     icon: Users
   },
   {
-    number: "20+",
-    text: "Countries Reached",
+    number: "30+",
+    text: "Working Technologies",
     icon: Globe2
   }
 ];
