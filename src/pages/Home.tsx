@@ -178,7 +178,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="relative flex items-center justify-center min-h-screen overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb')] bg-cover bg-center opacity-10"></div>
+          <div className="absolute inset-0 bg-[url('/logos/TechEdgeBootcampsBanner.png')] bg-cover bg-center opacity-10"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
