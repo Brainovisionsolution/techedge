@@ -202,7 +202,7 @@ const Home = () => {
 
           {/* Partner Logos */}
           <div className="flex flex-wrap justify-center items-center gap-8">
-            <img src="https://brainovision.in/images/aiefr-logo.png" alt="AIEFR" className="h-12 opacity-90" />
+            <img src="/logos/aiefrlogo.png" alt="AIEFR" className="h-12 opacity-90" />
             <img src="https://brainovision.in/images/anuvadini-logo.png" alt="ANUVADINI" className="h-12 opacity-90" />
             <img src="https://brainovision.in/images/brainovision-logo.png" alt="BRAIN O VISION" className="h-12 opacity-90" />
             <img src="https://brainovision.in/images/neat-logo.png" alt="N.E.A.T" className="h-12 opacity-90" />
