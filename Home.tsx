@@ -88,7 +88,7 @@ const Home = () => {
           <div className="h-32 bg-white/10 backdrop-blur-md border-b border-white/20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
               <div className="flex space-x-8">
-                <img src="project-bolt-sb1-hs3n4lnr (1)\project\logoss\aiefrlogo.png" alt="AIEFR" className="h-16" />
+                <img src="\logoss\aiefrlogo.png" alt="AIEFR" className="h-16" />
                 <img src="project\logoss\anuvadini.png" alt="ANUVADINI" className="h-16" />
                 <img src="project\logoss\bovyellow.png" alt="BRAIN O VISION" className="h-16" />
                 <img src="project\logoss\neat.png" alt="N.E.A.T" className="h-16" />
