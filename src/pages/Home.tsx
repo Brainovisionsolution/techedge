@@ -202,11 +202,11 @@ const Home = () => {
 
           {/* Partner Logos */}
           <div className="flex flex-wrap justify-center items-center gap-8">
-            <img src="/logos/aiefrlogo.png" alt="AIEFR" className="h-20 opacity-100" />
+            <img src="/logos/aictelogonew.png" alt="AIEFR" className="h-20 opacity-100" />
             <img src="/logos/anuvadini.png" alt="ANUVADINI" className="h-20 opacity-100" />
-            <img src="/logos/bovyellow.png" alt="BRAIN O VISION" className="h-20 opacity-100" />
+            <img src="/logos/bovlogonew.png" alt="BRAIN O VISION" className="h-20 opacity-100" />
             <img src="/logos/neat.png" alt="N.E.A.T" className="h-20 opacity-100" />
-            <img src="/logos/aicte.png" alt="AICTE" className="h-20 opacity-100" />
+            <img src="/logos/aiefrlogonew.png" alt="AICTE" className="h-20 opacity-100" />
           </div>
         </div>
       </div>
