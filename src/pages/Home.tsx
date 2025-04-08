@@ -2,7 +2,21 @@ import React from 'react';
 import ProgramCard from '../components/ProgramCard';
 import { Brain, GraduationCap, Users, FileText, Send, Phone, CheckCircle2, ArrowRight, Trophy, Building, Globe2, Award, Laptop, BookOpen, Presentation, Target, Lightbulb, Rocket } from 'lucide-react';
 
-const programs = [
+type ProgramStatus = "completed" | "active" | "coming_soon";
+
+interface Program {
+  id: string;
+  title: string;
+  status: ProgramStatus;
+  dates: string;
+  time: string;
+  audience: string;
+  hostFee: string;
+  participantFee: string;
+  mode: string;
+}
+
+const programs: Program[] = [
   {
     id: 'java-fullstack',
     title: 'SHORT TERM TRAINING PROGRAM (STTP) ON JAVA FULL STACK BY USING REACT AND AI',
@@ -29,7 +43,7 @@ const programs = [
     id: 'essential-skills',
     title: 'INTERNATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
     status: 'active',
-    dates: '07th - 11th, APR 2025',
+    dates: 'April 28th – May 2nd, 2025',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
     hostFee: '19999',
@@ -194,8 +208,8 @@ const Home = () => {
               <a href="#programs" className="px-8 py-3 bg-[#00D1FF] text-black rounded-full hover:bg-[#00D1FF]/90 transition-colors font-semibold">
                 View Programs
               </a>
-              <a href="#edu-plan" className="px-8 py-3 bg-transparent border-2 border-[#00D1FF] text-[#00D1FF] rounded-full hover:bg-[#00D1FF] hover:text-black transition-colors font-semibold">
-                EDU-PLAN @ ₹3999
+              <a href="https://rzp.io/l/lvQf1hGN" className="px-8 py-3 bg-transparent border-2 border-[#00D1FF] text-[#00D1FF] rounded-full hover:bg-[#00D1FF] hover:text-black transition-colors font-semibold">
+                EDU-PLAN @ ₹2999
               </a>
             </div>
           </div>
@@ -306,11 +320,12 @@ const Home = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="py-20 w-full">
+        <div className="px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#00D1FF] mb-12 text-center">Contact Us</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-[#1E1656]/50 backdrop-blur-md rounded-lg p-6 border border-[#00D1FF]/20">
+          
+          <div className="flex justify-center">
+            <div className="bg-[#1E1656]/50 backdrop-blur-md rounded-lg p-6 border border-[#00D1FF]/20 w-full max-w-xl">
               <h3 className="text-2xl font-bold text-[#FFD700] mb-6">Get in Touch</h3>
               <div className="space-y-4 text-gray-300">
                 <p className="flex items-center space-x-3">
@@ -323,35 +338,25 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-[#1E1656]/50 backdrop-blur-md rounded-lg p-6 border border-[#00D1FF]/20">
-              <h3 className="text-2xl font-bold text-[#FFD700] mb-6">Send us a Message</h3>
-              <form className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-2 bg-white/5 border border-[#00D1FF]/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:border-[#00D1FF]"
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-2 bg-white/5 border border-[#00D1FF]/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:border-[#00D1FF]"
-                />
-                <textarea
-                  placeholder="Your Message"
-                  rows={4}
-                  className="w-full px-4 py-2 bg-white/5 border border-[#00D1FF]/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:border-[#00D1FF]"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-[#00D1FF] to-[#00D1FF]/70 text-black py-2 px-4 rounded-md hover:from-[#00D1FF]/90 hover:to-[#00D1FF]/60 transition-all font-semibold"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
           </div>
         </div>
       </section>
+
+      {/* WhatsApp Floating Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a 
+          href="https://wa.me/919063611159?text=Hi!%20I'm%20interested%20in%20knowing%20more%20about%20TechEdge%20Bootcamps.%20Could%20you%20please%20share%20the%20details%20with%20me%3F%20Thanks!"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 transition-colors shadow-lg animate-bounce"
+          aria-label="Contact via WhatsApp"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-10 h-10">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29 3.617c-.545 0-1.08-.152-1.597-.477-.446-.292-1.006-.735-1.538-1.238l-.016-.015c-.368-.35-.67-.667-.909-.932-.42-.47-.752-1.04-.752-1.597 0-.53.214-.98.64-1.298.375-.277.86-.433 1.32-.433.223 0 .44.04.65.117.414.152.784.44 1.098.86l.933 1.204c.197.252.42.537.617.82.173.248.39.56.55.822.17.273.272.512.272.71 0 .223-.074.41-.223.56-.148.148-.346.222-.593.222z" />
+            <path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.768 0-3.46-.41-5-1.15-.31-.16-.53-.24-.69-.24-.19 0-.39.08-.56.25l-1.89 1.84c-.17.17-.33.25-.5.25-.08 0-.17-.02-.24-.06-.22-.09-.36-.27-.36-.57v-2.71c0-.22.11-.43.29-.56.85-.62 1.5-1.39 1.89-2.26.47-.99.71-2.04.71-3.11 0-4.42-3.58-8-8-8zm0 1a9 9 0 0 0-9 9 9 9 0 0 0 9 9c1.65 0 3.2-.38 4.6-1.06l.3-.17.28.14.06.03v1.94l1.84-1.8.08-.08v-3.29l-.09-.16-.21-.12a8.9 8.9 0 0 1-4.6-7.83c0-4.96 4.04-9 9-9 4.96 0 9 4.04 9 9 0 4.96-4.04 9-9 9z" />
+          </svg>
+        </a>
+      </div>
     </div>
   );
 }
