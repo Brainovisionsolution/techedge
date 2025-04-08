@@ -82,7 +82,7 @@ const ProgramDetails = () => {
             To enroll in the upcoming <strong>'International Level Essential Skills Training Program (ESTP) for Students & Faculty'</strong>, click the button below.
           </p>
           <a
-            href="/program/essential-skills"
+            href="https://techedge.brainovision.in/program/essential-skills"
             className="inline-block bg-[#00D1FF] text-[#1E1656] font-semibold px-6 py-3 rounded-2xl hover:bg-[#00b0dd] transition duration-300"
           >
             Join Now
