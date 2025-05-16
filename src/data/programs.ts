@@ -27,15 +27,15 @@ export const programs: Program[] = [
   },
   {
     id: 'estp',
-    title: 'INTERNATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
-    dates: '07th - 11th, APR 2025',
+    title: 'NATIONAL LEVEL WORKSHOP ON AI AND ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
+    dates: '23rd - 27th, JUNE 2025',
     timings: '07:00 PM to 08:30 PM',
     eligibility: ['All Students', 'Faculties'],
     participationFee: 49,
-    hostCollegeFee: 19999,
+    hostCollegeFee: 2999,
     registrationLink: '#register',
     status: 'upcoming',
-    description: 'International training program for essential skills development'
+    description: 'National Level training program for essential skills development'
   },
   {
     id: 'sdg-esg',
