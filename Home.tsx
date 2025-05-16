@@ -11,7 +11,7 @@ const programs = [
     time: '07:00 PM to 09:00 PM',
     audience: 'Faculties & Students',
     hostFee: '14999',
-    participantFee: '99'
+    participantFee: '999'
   },
   {
     id: 'ai-faculty',
