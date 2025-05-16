@@ -4,7 +4,7 @@ import { Calendar, Clock, Users, Award, Download, FileText, Brain, GraduationCap
 
 const programs = {
   'essential-skills': {
-    title: 'INTERNATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
+    title: 'NATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
     dates: 'April 28th – May 2nd, 2025',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
