@@ -41,7 +41,7 @@ const programs: Program[] = [
   },
   {
     id: 'essential-skills',
-    title: 'INTERNATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
+    title: 'NATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
     status: 'active',
     dates: 'April 28th – May 2nd, 2025',
     time: '07:00 PM to 08:30 PM',
