@@ -253,7 +253,7 @@ const ProgramDetails = () => {
                   <h3 className="text-xl font-semibold text-[#FFD700] mb-4">College Registrations</h3>
                   <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20 h-96">
                     <iframe
-                      src={program.registrationSheets.colleges}
+                      src={'https://docs.google.com/spreadsheets/d/1lcqGC9ziGn8POfGWdFUkzAgJm1ASw_2Vgn25GtthftA/edit?pli=1&gid=0#gid=0'}
                       className="w-full h-full"
                       frameBorder="0"
                       title="College Registrations"
@@ -264,7 +264,7 @@ const ProgramDetails = () => {
                   <h3 className="text-xl font-semibold text-[#FFD700] mb-4">Student Registrations</h3>
                   <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20 h-96">
                     <iframe
-                      src={program.registrationSheets.students}
+                      src={'https://docs.google.com/spreadsheets/d/1ATTtDXMh7gL0x3pVj6P_jGLELK8I6u_Q/edit?gid=216271657#gid=216271657'}
                       className="w-full h-full"
                       frameBorder="0"
                       title="Student Registrations"
@@ -281,3 +281,4 @@ const ProgramDetails = () => {
 }
 
 export default ProgramDetails;
+
