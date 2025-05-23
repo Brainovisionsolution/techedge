@@ -43,10 +43,10 @@ const programs: Program[] = [
     id: 'essential-skills',
     title: 'NATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
     status: 'active',
-    dates: 'April 28th – May 2nd, 2025',
+    dates: ' June 23rd to June 27th, 2025',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
-    hostFee: '19999',
+    hostFee: '2999',
     participantFee: '49',
     mode: 'Virtual (Zoom & YouTube Live)'
   },
