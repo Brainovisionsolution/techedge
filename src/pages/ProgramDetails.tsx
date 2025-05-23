@@ -13,7 +13,7 @@ const programs = {
       college: 'https://rzp.io/l/lvQf1hGN',
       student: 'https://rzp.io/rzp/Snn8yDq'
     },
-    brochureLink: 'https://brainovision.in/host-college',
+    brochureLink: 'https://drive.google.com/file/d/18YWXTxaXrJxc7dlwYZTd29isjHgf57yW/view?usp=sharing',
     overview: {
       chiefGuest: {
         name: 'Dr.Buddha Chandrasekhar',
