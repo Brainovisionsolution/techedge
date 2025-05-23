@@ -1,6 +1,29 @@
 import React from 'react';
 import ProgramCard from '../components/ProgramCard';
-import { Brain, GraduationCap, Users, FileText, Send, Phone, CheckCircle2, ArrowRight, Trophy, Building, Globe2, Award, Laptop, BookOpen, Presentation, Target, Lightbulb, Rocket } from 'lucide-react';
+import {
+  Brain,
+  GraduationCap,
+  Users,
+  FileText,
+  Send,
+  Phone,
+  CheckCircle2,
+  ArrowRight,
+  Trophy,
+  Building,
+  Globe2,
+  Award,
+  Laptop,
+  BookOpen,
+  Presentation,
+  Target,
+  Lightbulb,
+  Rocket,
+  Instagram,
+  Facebook,
+  Youtube,
+  MessageCircle
+} from 'lucide-react';
 
 type ProgramStatus = "completed" | "active" | "coming_soon";
 
@@ -43,7 +66,7 @@ const programs: Program[] = [
     id: 'essential-skills',
     title: 'NATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
     status: 'active',
-    dates: ' June 23rd to June 27th, 2025',
+    dates: 'June 23rd to June 27th',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
     hostFee: '2999',
@@ -318,29 +341,46 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-20 w-full">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#00D1FF] mb-12 text-center">Contact Us</h2>
-          
-          <div className="flex justify-center">
-            <div className="bg-[#1E1656]/50 backdrop-blur-md rounded-lg p-6 border border-[#00D1FF]/20 w-full max-w-xl">
-              <h3 className="text-2xl font-bold text-[#FFD700] mb-6">Get in Touch</h3>
-              <div className="space-y-4 text-gray-300">
-                <p className="flex items-center space-x-3">
-                  <Send className="h-5 w-5 text-[#00D1FF]" />
-                  <span>connect@brainovision.in</span>
-                </p>
-                <p className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-[#00D1FF]" />
-                  <span>+91-90636 11159</span>
-                </p>
-              </div>
-            </div>
-          </div>
+{/* Contact Section */}
+<section id="contact" className="py-20 w-full">
+  <div className="px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-[#00D1FF] mb-12 text-center">Contact Us</h2>
+    
+    <div className="flex justify-center">
+      <div className="bg-[#1E1656]/50 backdrop-blur-md rounded-lg p-6 border border-[#00D1FF]/20 w-full max-w-xl">
+        <h3 className="text-2xl font-bold text-[#FFD700] mb-6">Get in Touch</h3>
+        
+        <div className="space-y-4 text-gray-300 mb-6">
+          <p className="flex items-center space-x-3">
+            <Send className="h-5 w-5 text-[#00D1FF]" />
+            <span>connect@brainovision.in</span>
+          </p>
+          <p className="flex items-center space-x-3">
+            <Phone className="h-5 w-5 text-[#00D1FF]" />
+            <span>+91-90636 11159</span>
+          </p>
         </div>
-      </section>
+
+        {/* Social Media Icons */}
+        <div className="flex justify-center space-x-6 text-[#00D1FF]">
+          <a href="https://www.instagram.com/brainovision/" target="_blank" rel="noopener noreferrer">
+            <Instagram className="h-6 w-6 hover:text-[#FFD700]" />
+          </a>
+          <a href="https://www.facebook.com/Brainovisions/" target="_blank" rel="noopener noreferrer">
+            <Facebook className="h-6 w-6 hover:text-[#FFD700]" />
+          </a>
+          <a href="https://www.youtube.com/@brainovision" target="_blank" rel="noopener noreferrer">
+            <Youtube className="h-6 w-6 hover:text-[#FFD700]" />
+          </a>
+          <a href="https://whatsapp.com/channel/0029VasS8Af8vd1WyBKELA0N" target="_blank" rel="noopener noreferrer">
+            <MessageCircle className="h-6 w-6 hover:text-[#FFD700]" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* WhatsApp Floating Button */}
       <div className="fixed bottom-6 right-6 z-50">
