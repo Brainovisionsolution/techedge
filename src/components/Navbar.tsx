@@ -32,44 +32,37 @@ const Navbar = () => {
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-4 items-center">
             <Link to="/" className="text-white hover:text-[#00D1FF] px-3 py-2 transition-colors">Home</Link>
             <a href="#programs" className="text-white hover:text-[#00D1FF] px-3 py-2 transition-colors">Programs</a>
             <a href="#benefits" className="text-white hover:text-[#00D1FF] px-3 py-2 transition-colors">Benefits</a>
             <a href="#contact" className="text-white hover:text-[#00D1FF] px-3 py-2 transition-colors">Contact</a>
+            <a
+              href="https://internships.brainovision.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#00D1FF] text-[#1E1656] font-semibold px-4 py-2 rounded-md hover:bg-[#00b3e6] transition-colors"
+            >
+              Internship
+            </a>
           </div>
         </div>
 
         {/* Mobile menu */}
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link
-              to="/"
-              className="block text-white hover:text-[#00D1FF] px-3 py-2 rounded-md transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
+            <Link to="/" className="block text-white hover:text-[#00D1FF] px-3 py-2 rounded-md transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
+            <a href="#programs" className="block text-white hover:text-[#00D1FF] px-3 py-2 rounded-md transition-colors" onClick={() => setIsMenuOpen(false)}>Programs</a>
+            <a href="#benefits" className="block text-white hover:text-[#00D1FF] px-3 py-2 rounded-md transition-colors" onClick={() => setIsMenuOpen(false)}>Benefits</a>
+            <a href="#contact" className="block text-white hover:text-[#00D1FF] px-3 py-2 rounded-md transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <a
-              href="#programs"
-              className="block text-white hover:text-[#00D1FF] px-3 py-2 rounded-md transition-colors"
+              href="https://internships.brainovision.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-[#00D1FF] text-[#1E1656] font-semibold px-3 py-2 rounded-md text-center hover:bg-[#00b3e6] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Programs
-            </a>
-            <a
-              href="#benefits"
-              className="block text-white hover:text-[#00D1FF] px-3 py-2 rounded-md transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Benefits
-            </a>
-            <a
-              href="#contact"
-              className="block text-white hover:text-[#00D1FF] px-3 py-2 rounded-md transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
+              Internship
             </a>
           </div>
         </div>
