@@ -13,7 +13,7 @@ const programs = {
       college: 'https://rzp.io/l/lvQf1hGN',
       student: 'https://rzp.io/rzp/Snn8yDq'
     },
-    brochureLink: 'https://drive.google.com/file/d/18YWXTxaXrJxc7dlwYZTd29isjHgf57yW/view?usp=sharing',
+    brochureLink: 'https://brainovision.in/host-college',
     overview: {
       chiefGuest: {
         name: 'Dr.Buddha Chandrasekhar',
@@ -246,33 +246,57 @@ const ProgramDetails = () => {
               </div>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold text-[#00D1FF] mb-6">Registrations</h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold text-[#FFD700] mb-4">College Registrations</h3>
-                  <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20 h-96">
-                    <iframe
-                      src={'https://docs.google.com/spreadsheets/d/1lcqGC9ziGn8POfGWdFUkzAgJm1ASw_2Vgn25GtthftA/edit?pli=1&gid=0#gid=0'}
-                      className="w-full h-full"
-                      frameBorder="0"
-                      title="College Registrations"
-                    ></iframe>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#FFD700] mb-4">Student Registrations</h3>
-                  <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20 h-96">
-                    <iframe
-                      src={'https://docs.google.com/spreadsheets/d/1ATTtDXMh7gL0x3pVj6P_jGLELK8I6u_Q/edit?gid=216271657#gid=216271657'}
-                      className="w-full h-full"
-                      frameBorder="0"
-                      title="Student Registrations"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </section>
+           <section>
+  <h2 className="text-2xl font-bold text-[#00D1FF] mb-6">Registrations</h2>
+  <div className="space-y-6">
+    <div>
+      <h3 className="text-xl font-semibold text-[#FFD700] mb-4">College Registrations</h3>
+      <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20 h-96">
+        <iframe
+          src={'https://docs.google.com/spreadsheets/d/1lcqGC9ziGn8POfGWdFUkzAgJm1ASw_2Vgn25GtthftA/edit?pli=1&gid=0'}
+          className="w-full h-full"
+          frameBorder="0"
+          title="College Registrations"
+        ></iframe>
+      </div>
+      <div className="mt-4 text-right">
+        <a
+          href="https://docs.google.com/spreadsheets/d/1lcqGC9ziGn8POfGWdFUkzAgJm1ASw_2Vgn25GtthftA/export?format=xlsx&gid=0"
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 bg-[#00D1FF] text-white rounded hover:bg-[#00a8d9] transition"
+        >
+          Download Excel
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold text-[#FFD700] mb-4">Student Registrations</h3>
+      <div className="bg-white/5 rounded-lg p-4 border border-[#00D1FF]/20 h-96">
+        <iframe
+          src={'https://docs.google.com/spreadsheets/d/1ATTtDXMh7gL0x3pVj6P_jGLELK8I6u_Q/edit?gid=216271657'}
+          className="w-full h-full"
+          frameBorder="0"
+          title="Student Registrations"
+        ></iframe>
+      </div>
+      <div className="mt-4 text-right">
+        <a
+          href="https://docs.google.com/spreadsheets/d/1ATTtDXMh7gL0x3pVj6P_jGLELK8I6u_Q/export?format=xlsx&gid=216271657"
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 bg-[#00D1FF] text-white rounded hover:bg-[#00a8d9] transition"
+        >
+          Download Excel
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
           </div>
         </div>
       </div>
@@ -281,4 +305,3 @@ const ProgramDetails = () => {
 }
 
 export default ProgramDetails;
-
