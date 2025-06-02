@@ -70,7 +70,7 @@ const programs: Program[] = [
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
     hostFee: '2999',
-    participantFee: '49',
+    participantFee: '99',
     mode: 'Virtual (Zoom & YouTube Live)'
   },
   {
