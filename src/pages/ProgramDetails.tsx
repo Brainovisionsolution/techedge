@@ -8,7 +8,7 @@ const programs = {
     dates: 'June 23rd to June 27th, 2025',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
-    fee: '49',
+    fee: '99',
     registrationLinks: {
       college: 'https://rzp.io/l/lvQf1hGN',
       student: 'https://rzp.io/rzp/Snn8yDq'
