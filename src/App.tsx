@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProgramDetails from './pages/ProgramDetails';
 import SessionPage from './components/SessionPage';
-import CertificatePage from './components/CertificatePage';
+
 
 function App() {
   return (
@@ -17,9 +17,7 @@ function App() {
           <Route path="/program/:id" element={<ProgramDetails />} />
           <Route path="/session/:id" element={<SessionPage />} />
           
-          {/* ✅ Certificate Routes */}
-          <Route path="/certificates" element={<CertificatePage />} />
-          <Route path="/certificates/:sessionId" element={<CertificatePage />} />
+         
         </Routes>
         <Footer />
       </div>
