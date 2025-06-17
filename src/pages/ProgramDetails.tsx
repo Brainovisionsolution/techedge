@@ -8,19 +8,31 @@ const programs = {
     dates: 'June 23rd to June 27th, 2025',
     time: '07:00 PM to 08:30 PM',
     audience: 'All Students & Faculties',
-    fee: '99',
+    fee: '49',
     registrationLinks: {
       college: 'https://rzp.io/l/lvQf1hGN',
       student: 'https://rzp.io/rzp/Snn8yDq'
     },
-    brochureLink: 'https://drive.google.com/file/d/18YWXTxaXrJxc7dlwYZTd29isjHgf57yW/view?usp=sharing',
+    brochureLink: 'https://brainovision.in/host-college',
     overview: {
-      chiefGuest: {
-        name: 'Dr.Buddha Chandrasekhar',
-        title: 'Chief Coordinating Officer - AICTE All India Council for Technical Education',
-        photo: '/logos/budha.png',
-        bio: 'Buddha Chandrasekhar is focused to make India as Education and Knowledge capital of the world by providing the best Education, Technology, skill, Internships, Entrepreneurship, Startup, and innovation eco-system to the youth of India. Buddha Chandrasekhar is a unique combination of Technologies, Ideas, Multi-domain business knowledge, Entrepreneur, Leader with a Go-getter attitude.'
-      },
+      // …inside programs["essential-skills"].overview …
+chiefGuest: {
+  name: 'I V S Ranganath',
+  title: 'Head – HR (India), Shriram Bioseed Genetics – DCM Shriram Ltd.',
+  photo: '/logos/ChiefGuest.png',   // ← drop the PNG you just sent into /public/logos/
+  bio: `I V S Ranganath is a seasoned HR leader with 20+ years of cross‑industry
+experience spanning manufacturing, FMCG, telecom, engineering, and agriculture.
+Currently serving as Head – HR (India) at Shriram Bioseed Genetics (DCM Shriram Ltd.),
+he is widely recognized for pioneering agile, human‑centric HR strategies.
+Accolades include “Power 30 AI Leader – Asia” and “Top 100 HR Innovator,” and he
+has judged prestigious awards such as HR Association of India’s “40 Under 40.”
+Ranganath champions the use of AI and predictive analytics in learning and
+leadership development, fosters resilient experimentation‑driven cultures in
+VUCA environments, and is valued for an empathetic, collaborative, purpose‑led
+leadership style.`
+},
+
+     
       leadTrainer: {
         name: 'N.Narayana Swamy',
         title: 'Technical Head & Director Of Operations',
