@@ -18,7 +18,7 @@ const SESSIONS: Record<string, SessionInfo> = {
     title: "ESTP – AI & Essential Skills (Live)",
     speakerImage: "/logos/swami.jpg",
     joinLink: "https://zoom.us/j/xxxxxxxxxx",   // ← real link here
-    startAt: "2025-06-16T19:00:00+07:037",
+    startAt: "2025-06-18T19:00:00+07:037",
 
     // NEW ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑
     description:
