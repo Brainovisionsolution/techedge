@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <Brain className="h-8 w-8 text-yellow-400" />
-            <span className="text-xl font-bold text-white">BrainoVision</span>
+            <span className="text-xl font-bold text-white">Brainovision</span>
           </div>
           <div className="text-gray-300 text-sm">
-            © 2024 BrainoVision. All rights reserved.
+            © 2024 Brainovision. All rights reserved.
           </div>
         </div>
       </div>
