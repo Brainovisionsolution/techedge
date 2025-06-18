@@ -15,7 +15,7 @@ const SESSIONS: Record<string, SessionInfo> = {
   "essential-skills": {
     id: "essential-skills",
     title: "ESTP – AI & Essential Skills (Live Session)",
-    speakerImage: "/logos/ChiefGuest.png",
+    speakerImage: "/logos/ChiefGuest.jpg",
     joinLink:
       "https://brainovision.org/live-class/national-level-workshop-estp-j1-2025/sh15290-dxrwej/jro-jkr/waiting",
     startAt: "2025-06-23T18:45:00+05:30", // ✅ 23rd June, 6:45 PM IST
