@@ -15,12 +15,12 @@ const SESSIONS: Record<string, SessionInfo> = {
   "essential-skills": {
     id: "essential-skills",
     title: "ESTP – AI & Essential Skills (Live Session)",
-    speakerImage: "/logos/ChiefGuest.jpg",
+    speakerImage: "/logos/ChiefGuest.png",
     joinLink:
       "https://brainovision.org/live-class/national-level-workshop-estp-j1-2025/sh15290-dxrwej/jro-jkr/waiting",
-    startAt: "2025-06-23T18:45:00+05:30", // ✅ 23rd June, 6:45 PM IST
+    startAt: "2025-06-23T18:45:00+05:30",
     description:
- "Access to the session will be available after the countdown ends."
+      "Access to the session will be available after the countdown ends."
   }
 };
 
@@ -28,6 +28,7 @@ const SessionPage = () => {
   const { id } = useParams<{ id: string }>();
   const session = SESSIONS[id ?? ""];
 
+  /* ---------- countdown ---------- */
   const [secondsLeft, setSecondsLeft] = useState(() =>
     Math.max(
       0,
@@ -44,6 +45,7 @@ const SessionPage = () => {
     return () => clearInterval(t);
   }, [secondsLeft]);
 
+  /* ---------- not‑found fallback ---------- */
   if (!session) {
     return (
       <div className="h-screen flex items-center justify-center text-2xl text-red-500">
@@ -52,9 +54,11 @@ const SessionPage = () => {
     );
   }
 
+  /* ---------- helpers ---------- */
   const hh = String(Math.floor(secondsLeft / 3600)).padStart(2, "0");
   const mm = String(Math.floor((secondsLeft % 3600) / 60)).padStart(2, "0");
   const ss = String(secondsLeft % 60).padStart(2, "0");
+  const isReady = secondsLeft === 0;
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-start bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 p-6">
@@ -63,7 +67,7 @@ const SessionPage = () => {
         {session.title}
       </h1>
 
-      {/* image */}
+      {/* speaker image */}
       <img
         src={session.speakerImage}
         alt="Session speaker"
@@ -75,28 +79,32 @@ const SessionPage = () => {
         {session.description}
       </p>
 
-      {/* countdown or join link */}
-      {secondsLeft > 0 ? (
-        <div className="text-center mb-10">
+      {/* countdown */}
+      {secondsLeft > 0 && (
+        <div className="text-center mb-6">
           <p className="text-gray-300 mb-2 tracking-wide">Session starts in</p>
           <div className="text-5xl font-mono text-[#FFD700]">
             {hh}:{mm}:{ss}
           </div>
         </div>
-      ) : (
-        <div className="text-center mb-10">
-          <a
-            href={session.joinLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-10 py-4 inline-block bg-[#00D1FF] text-black text-xl font-semibold rounded-full hover:bg-[#00D1FF]/90 transition-colors"
-          >
-            ➜ Join Live Session
-          </a>
-        </div>
       )}
 
-      {/* footer note */}
+      {/* join button (always visible) */}
+      <a
+        href={isReady ? session.joinLink : "#"}
+        onClick={(e) => {
+          if (!isReady) e.preventDefault(); // block navigation until ready
+        }}
+        aria-disabled={!isReady}
+        className={`px-10 py-4 mb-10 inline-block text-xl font-semibold rounded-full transition-colors
+          ${isReady
+            ? "bg-[#00D1FF] text-black hover:bg-[#00D1FF]/90"
+            : "bg-gray-500/60 text-gray-200 cursor-not-allowed"}`}
+      >
+        ➜ Join Live Session
+      </a>
+
+      {/* footer */}
       <p className="text-sm text-gray-400 text-center max-w-md">
         All participants will receive an AICTE‑endorsed certificate upon
         successful completion. For support, email&nbsp;
