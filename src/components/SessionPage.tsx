@@ -6,6 +6,10 @@ type SessionInfo = {
   id: string;
   title: string;
   speakerImage: string;
+  speakerTitle?: string;
+  speakerName?: string;
+  speakerDesignation?: string;
+  speakerBio?: string;
   joinLink: string;
   description: string;
 };
@@ -14,7 +18,13 @@ const SESSIONS: Record<string, SessionInfo> = {
   "essential-skills": {
     id: "essential-skills",
     title: "ESTP – AI & Essential Skills (Live Session)",
-    speakerImage: "/logos/ChiefGuest.jpg",
+    speakerImage: "/logos/ChiefGuest.png",
+    speakerTitle: "Chief Guest",
+    speakerName: "I V S Ranganath",
+    speakerDesignation:
+      "Head – HR (India), Shriram Bioseed Genetics (DCM Shriram Ltd)",
+    speakerBio:
+      "",
     joinLink:
       "https://brainovision.org/live-class/national-level-workshop-estp-j1-2025/sh15290-dxrwej/jro-jkr/waiting",
     description:
@@ -75,7 +85,6 @@ const SessionPage = () => {
   if (now > sessionStart && now <= sessionEnd) {
     target = now;            // already started, show 0
   } else if (now > sessionEnd) {
-    // after today's session: next day (unless programme finished)
     if (dayIndex < PROGRAM_DAYS) {
       target = sessionStart + dayMillis;
     } else {
@@ -110,6 +119,21 @@ const SessionPage = () => {
         alt="Speaker"
         className="w-44 h-44 object-cover rounded-full border-4 border-[#FFD700] shadow-lg mb-4"
       />
+
+      {/* speaker info */}
+      <div className="text-center mb-6">
+        {session.speakerTitle && (
+          <p className="text-[#FFD700] text-sm font-semibold uppercase tracking-widest">
+            {session.speakerTitle}
+          </p>
+        )}
+        {session.speakerName && (
+          <p className="text-lg font-bold mt-1">{session.speakerName}</p>
+        )}
+        {session.speakerDesignation && (
+          <p className="text-sm text-gray-300 mt-1">{session.speakerDesignation}</p>
+        )}
+      </div>
 
       {/* day number */}
       <p className="uppercase text-sm text-gray-300 tracking-widest mb-2">
@@ -150,9 +174,16 @@ const SessionPage = () => {
       </p>
 
       {/* description */}
-      <p className="text-sm text-gray-400 text-center max-w-md">
+      <p className="text-sm text-gray-400 text-center max-w-md mb-4">
         {session.description}
       </p>
+
+      {/* speaker bio */}
+      {session.speakerBio && (
+        <p className="text-sm text-gray-400 text-justify max-w-2xl">
+          {session.speakerBio}
+        </p>
+      )}
     </div>
   );
 };
