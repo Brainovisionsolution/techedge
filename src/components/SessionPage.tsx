@@ -18,7 +18,7 @@ const SESSIONS: Record<string, SessionInfo> = {
   "essential-skills": {
     id: "essential-skills",
     title: "ESTP – AI & Essential Skills (Live Session)",
-    speakerImage: "/logos/ChiefGuest.png",
+    speakerImage: "/logos/ChiefGuest.jpg",
     speakerTitle: "Chief Guest",
     speakerName: "I V S Ranganath",
     speakerDesignation:
