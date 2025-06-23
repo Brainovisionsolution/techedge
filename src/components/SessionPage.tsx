@@ -33,7 +33,7 @@ const SESSIONS: Record<string, SessionInfo> = {
 };
 
 /* ------------ programme constants ------------ */
-const START_HHMM = "18:45";           // 06:45 PM IST
+const START_HHMM = "18:55";           // 06:55 PM IST
 const END_HHMM   = "20:30";           // 08:30 PM IST
 const PROGRAM_START = "2025-06-23";   // Day 1
 const PROGRAM_DAYS  = 5;              // 23 – 27 Jun 2025
@@ -110,7 +110,7 @@ const SessionPage = () => {
         5 Days • 23 – 27 June 2025
       </p>
       <p className="text-sm text-gray-300 mb-6">
-        Session Time: 06:45 PM – 08:30 PM
+        Session Time: 06:55 PM – 08:30 PM
       </p>
 
       {/* speaker image */}
@@ -170,7 +170,7 @@ const SessionPage = () => {
       {/* note */}
       <p className="text-xs text-red-400 text-center max-w-sm mb-6">
         Note: This page is only for Faculty Coordinators (don’t share it).
-        Button activates at 06:45 PM and closes after the session ends.
+        Button activates at 06:55 PM and closes after the session ends.
       </p>
 
       {/* description */}
