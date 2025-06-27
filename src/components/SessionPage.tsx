@@ -20,7 +20,7 @@ const SESSIONS: Record<string, SessionInfo> = {
     title: "ESTP – AI & Essential Skills (Live Session)",
     speakerImage: "/logos/ChiefGuest.jpg",
     speakerTitle: "Chief Guest",
-    speakerName: "I V S Ranganath",
+    speakerName: "Mr.Bala Peddigari",
     speakerDesignation:
       "Head – HR (India), Shriram Bioseed Genetics (DCM Shriram Ltd)",
     speakerBio: "",
