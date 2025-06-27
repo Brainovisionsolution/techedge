@@ -17,7 +17,7 @@ const CertificateChecker = () => {
 
     try {
       const response = await fetch(
-        `https://script.google.com/macros/s/AKfycbzCaZfugBwwvjDARJC0yfSQLEivj87__l3iPkCkmr8yexVoKW9AQkB9cNTDLkC1zKwW/exec?email=${encodeURIComponent(email)}`
+        `https://script.google.com/macros/s/AKfycbxVXt_auIbYiMmufAJf4uF6ihJ6RbZNMsnG_WcX4-Q6sZrgetQPW5RGZKVYy_cXi8IA3Q/exec?email=${encodeURIComponent(email)}`
       );
 
       const data = await response.json();
