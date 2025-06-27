@@ -23,12 +23,14 @@ const programs = {
           photo: '/logos/ChiefGuest.png',
           bio: `I V S Ranganath is a seasoned HR leader with 20+ years of cross‑industry experience spanning manufacturing, FMCG, telecom, engineering, and agriculture. Currently serving as Head – HR (India) at Shriram Bioseed Genetics (DCM Shriram Ltd.), he is widely recognized for pioneering agile, human‑centric HR strategies.`
         },
-        {
-          name: 'Dr. A. Anitha',
-          title: 'Professor & Head – Department of CSE, JNTUH CEH',
-          photo: '/logos/DrAnitha.jpg',
-          bio: `Dr. Anitha is a respected academic leader guiding research and development in the field of Computer Science Engineering. Her contributions to student empowerment and innovative teaching have earned her widespread recognition.`
-        }
+       {
+  name: 'Mr. Bala Prasad Peddigari',
+  title: 'Chief Innovation Officer and Global Head – Technology Advisory Services, TSS Business Group',
+  photo: '/logos/ChiefGuest1.jpg',
+  bio: `We are honored to welcome Mr. Bala Prasad Peddigari, Chief Innovation Officer and Global Head – Technology Advisory Services, Technology, Software and Services Business Group.
+
+A pioneering force in the technology world, Mr. Bala Prasad has been a guiding light for digital transformation in leading enterprises. His expertise in future technologies from AI and cloud to enterprise strategy and innovation ecosystems has left a significant mark on the global tech landscape.`
+}
       ],
       leadTrainer: {
         name: 'N. Narayana Swamy',
