@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProgramDetails from './pages/ProgramDetails';
 import SessionPage from './components/SessionPage';
+import CertificateChecker from './components/CertificateChecker';
 
 
 function App() {
@@ -16,8 +17,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/program/:id" element={<ProgramDetails />} />
           <Route path="/session/:id" element={<SessionPage />} />
-          
-         
+
+          {/* ✅ New Route for Email-based Certificate Download */}
+          <Route path="/certificates" element={<CertificateChecker />} />
+
+          {/* ✅ New Route for Host College Registration */}
+       
         </Routes>
         <Footer />
       </div>
