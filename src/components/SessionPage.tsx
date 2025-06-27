@@ -18,11 +18,11 @@ const SESSIONS: Record<string, SessionInfo> = {
   "essential-skills": {
     id: "essential-skills",
     title: "ESTP – AI & Essential Skills (Live Session)",
-    speakerImage: "/logos/ChiefGuest.jpg",
+    speakerImage: "/logos/ChiefGuest1.jpg",
     speakerTitle: "Chief Guest",
     speakerName: "Mr.Bala Peddigari",
     speakerDesignation:
-      "Head – HR (India), Shriram Bioseed Genetics (DCM Shriram Ltd)",
+      "Chief Innovation Officer and Global Head - Technology Advisory",
     speakerBio: "",
     joinLink:
      "https://brainovision.org/live-class/national-level-workshop-estp-j5-2025/sh15290-ohiwba/xdq-a6x/waiting",
