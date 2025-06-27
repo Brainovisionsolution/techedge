@@ -22,7 +22,7 @@ const SESSIONS: Record<string, SessionInfo> = {
     speakerTitle: "Chief Guest",
     speakerName: "Mr.Bala Peddigari",
     speakerDesignation:
-      "Chief Innovation Officer and Global Head - Technology Advisory",
+      "Chief Innovation Officer and Global Head – Technology Advisory Services, TSS Business Group",
     speakerBio: "",
     joinLink:
      "https://brainovision.org/live-class/national-level-workshop-estp-j5-2025/sh15290-ohiwba/xdq-a6x/waiting",
