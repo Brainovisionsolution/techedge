@@ -20,7 +20,7 @@ const programs = {
         {
           name: 'I V S Ranganath',
           title: 'Head – HR (India), Shriram Bioseed Genetics – DCM Shriram Ltd.',
-          photo: '/logos/ChiefGuest.png',
+          photo: '/logos/ChiefGuest.jpg',
           bio: `I V S Ranganath is a seasoned HR leader with 20+ years of cross‑industry experience spanning manufacturing, FMCG, telecom, engineering, and agriculture. Currently serving as Head – HR (India) at Shriram Bioseed Genetics (DCM Shriram Ltd.), he is widely recognized for pioneering agile, human‑centric HR strategies.`
         },
        {
