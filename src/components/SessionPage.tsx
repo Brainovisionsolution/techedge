@@ -25,7 +25,7 @@ const SESSIONS: Record<string, SessionInfo> = {
       "Head – HR (India), Shriram Bioseed Genetics (DCM Shriram Ltd)",
     speakerBio: "",
     joinLink:
-     "https://brainovision.org/live-class/national-level-workshop-estp-j4-2025/sh15290-t4xeda/bxm-meq/waiting",
+     "https://brainovision.org/live-class/national-level-workshop-estp-j5-2025/sh15290-ohiwba/xdq-a6x/waiting",
     description:
       "Access to the session will be available after the countdown ends.",
   },
