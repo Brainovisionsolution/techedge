@@ -40,17 +40,17 @@ const CertificateChecker = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1E1656] to-[#322C70] px-4 py-10 flex flex-col items-center space-y-8">
-      
-      {/* Workshop Title */}
-      <h1 className="mt-[100px] text-white text-4xl md:text-5xl font-bold text-center animate-fadeIn leading-tight">
-        National-Level Workshop on Application Development <br className="hidden md:block" /> 
+    <div className="min-h-screen bg-gradient-to-br from-[#1E1656] to-[#322C70] px-4 py-10 flex flex-col items-center space-y-12">
+
+      {/* Title */}
+      <h1 className="mt-[100px] text-white text-4xl md:text-5xl font-bold text-center leading-tight animate-fadeIn">
+        National-Level Workshop on Application Development <br className="hidden md:block" />
         with AI & Essential Skills (ESTP)
       </h1>
 
-      <div className="flex flex-col md:flex-row gap-8 justify-center items-start w-full max-w-6xl">
-        
-        {/* Certificate Download Panel */}
+      <div className="flex flex-col md:flex-row gap-12 justify-center items-start w-full max-w-6xl">
+
+        {/* Certificate Panel */}
         <div className="bg-white text-black p-8 rounded-2xl shadow-2xl w-full md:max-w-md">
           <h2 className="text-3xl font-bold text-center text-[#4A2CD4] mb-6">
             🎓 Certificate Download
@@ -65,7 +65,6 @@ const CertificateChecker = () => {
               required
               className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
-
             <button
               type="submit"
               disabled={loading}
@@ -99,76 +98,47 @@ const CertificateChecker = () => {
 
           {notFound && (
             <p className="mt-6 text-red-500 text-center animate-fadeIn">
-               Certificate not found. Please check the sheet below for your status.
+              ❌ Certificate not found. Please check the sheet below for your status.
             </p>
           )}
         </div>
 
-        {/* Clean Join Our Communities */}
+        {/* Communities Icons */}
         <div className="w-full md:max-w-sm flex flex-col items-center justify-center">
           <h3 className="text-white text-2xl md:text-3xl font-bold mb-6 animate-fadeIn">
-             Join Our Communities
+            🤝 Join Our Communities
           </h3>
           <div className="flex flex-wrap justify-center gap-6 animate-fadeIn">
-            <a
-              href="https://www.linkedin.com/in/praneethbabu2003"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transform hover:scale-110 transition duration-300"
-            >
-              <img
-                src="/logos/linkedin.png"
-                alt="LinkedIn"
-                className="w-12 h-12 md:w-14 md:h-14 object-contain"
-              />
-            </a>
-            <a
-              href="https://youtube.com/@praneethbabu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transform hover:scale-110 transition duration-300"
-            >
-              <img
-                src="/logos/youtube.png"
-                alt="YouTube"
-                className="w-12 h-12 md:w-14 md:h-14 object-contain"
-              />
-            </a>
-            <a
-              href="https://instagram.com/praneethbabu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 md:w-14 md:h-14 object-contain"
-            >
-              <img
-                src="/logos/instagram.png"
-                alt="Instagram"
-                className="w-12 h-12 md:w-14 md:h-14 object-contain"
-              />
-            </a>
-            <a
-              href="https://wa.me/919063611159"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transform hover:scale-110 transition duration-300"
-            >
-              <img
-                src="/logos/whatsapp.png"
-                alt="WhatsApp"
-                className="w-12 h-12 md:w-14 md:h-14 object-contain"
-              />
-            </a>
+            {[
+              { href: "https://www.linkedin.com/in/praneethbabu2003", src: "/logos/linkedin.png", alt: "LinkedIn" },
+              { href: "https://youtube.com/@praneethbabu", src: "/logos/youtube.png", alt: "YouTube" },
+              { href: "https://instagram.com/praneethbabu", src: "/logos/instagram.png", alt: "Instagram" },
+              { href: "https://wa.me/919063611159", src: "/logos/whatsapp.png", alt: "WhatsApp" },
+            ].map(({ href, src, alt }) => (
+              <a
+                key={alt}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-110 hover:brightness-110 transition duration-300"
+              >
+                <img
+                  src={src}
+                  alt={alt}
+                  className="w-12 h-12 md:w-14 md:h-14 object-contain"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* Google Sheet Section */}
+      {/* Google Sheet Embed */}
       <div className="w-full max-w-5xl mt-10 text-white">
         <h3 className="text-center text-xl font-semibold mb-4 text-yellow-400">
           📋 If you can't find your certificate above, please check the sheet below:
         </h3>
-<div className="bg-white rounded-xl overflow-hidden shadow-lg border border-[#00D1FF]/20 h-[900px]">
-
+        <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-[#00D1FF]/20 h-[900px]">
           <iframe
             src="https://docs.google.com/spreadsheets/d/1F5Ho9L9nOjgUr8Z0kSh6xjXbH3vRbcYtWZ/edit?usp=sharing"
             title="Certificate Status"
@@ -178,7 +148,7 @@ const CertificateChecker = () => {
         </div>
       </div>
 
-      {/* Animation Styles */}
+      {/* Fade In Animation */}
       <style>
         {`
           .animate-fadeIn {
@@ -195,4 +165,3 @@ const CertificateChecker = () => {
 };
 
 export default CertificateChecker;
-
