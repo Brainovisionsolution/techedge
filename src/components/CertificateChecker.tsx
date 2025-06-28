@@ -99,7 +99,7 @@ const CertificateChecker = () => {
 
           {notFound && (
             <p className="mt-6 text-red-500 text-center animate-fadeIn">
-              ❌ Certificate not found. Please check the sheet below for your status.
+               Certificate not found. Please check the sheet below for your status.
             </p>
           )}
         </div>
@@ -107,7 +107,7 @@ const CertificateChecker = () => {
         {/* Clean Join Our Communities */}
         <div className="w-full md:max-w-sm flex flex-col items-center justify-center">
           <h3 className="text-white text-2xl md:text-3xl font-bold mb-6 animate-fadeIn">
-            🤝 Join Our Communities
+             Join Our Communities
           </h3>
           <div className="flex flex-wrap justify-center gap-6 animate-fadeIn">
             <a
