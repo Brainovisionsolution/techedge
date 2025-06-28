@@ -103,32 +103,44 @@ const CertificateChecker = () => {
           )}
         </div>
 
-        {/* Communities Icons */}
+        {/* Join Our Communities - Text Buttons */}
         <div className="w-full md:max-w-sm flex flex-col items-center justify-center">
           <h3 className="text-white text-2xl md:text-3xl font-bold mb-6 animate-fadeIn">
             🤝 Join Our Communities
           </h3>
-          <div className="flex flex-wrap justify-center gap-6 animate-fadeIn">
-            {[
-              { href: "https://www.linkedin.com/in/praneethbabu2003", src: "/logos/linkedin.png", alt: "LinkedIn" },
-              { href: "https://youtube.com/@praneethbabu", src: "/logos/youtube.png", alt: "YouTube" },
-              { href: "https://instagram.com/praneethbabu", src: "/logos/instagram.png", alt: "Instagram" },
-              { href: "https://wa.me/919063611159", src: "/logos/whatsapp.png", alt: "WhatsApp" },
-            ].map(({ href, src, alt }) => (
-              <a
-                key={alt}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform hover:scale-110 hover:brightness-110 transition duration-300"
-              >
-                <img
-                  src={src}
-                  alt={alt}
-                  className="w-12 h-12 md:w-14 md:h-14 object-contain"
-                />
-              </a>
-            ))}
+          <div className="flex flex-wrap justify-center gap-4 animate-fadeIn">
+            <a
+              href="https://www.linkedin.com/in/praneethbabu2003"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 bg-[#0A66C2] text-white rounded-full font-semibold hover:bg-[#084c99] transition duration-300"
+            >
+              🔗 LinkedIn (LI)
+            </a>
+            <a
+              href="https://youtube.com/@praneethbabu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 bg-[#FF0000] text-white rounded-full font-semibold hover:bg-[#cc0000] transition duration-300"
+            >
+              📺 YouTube (YT)
+            </a>
+            <a
+              href="https://instagram.com/praneethbabu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white rounded-full font-semibold hover:opacity-90 transition duration-300"
+            >
+              📸 Instagram (IG)
+            </a>
+            <a
+              href="https://wa.me/919063611159"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 bg-[#25D366] text-white rounded-full font-semibold hover:bg-[#1ebc59] transition duration-300"
+            >
+              💬 WhatsApp (WA)
+            </a>
           </div>
         </div>
       </div>
@@ -136,7 +148,7 @@ const CertificateChecker = () => {
       {/* Google Sheet Embed */}
       <div className="w-full max-w-5xl mt-10 text-white">
         <h3 className="text-center text-xl font-semibold mb-4 text-yellow-400">
-          📋 If you can't find your certificate above, please check the sheet below:
+          📋 If you can't find your certificate above, please check your Host College Certificate Template Status Below :
         </h3>
         <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-[#00D1FF]/20 h-[900px]">
           <iframe
