@@ -110,7 +110,7 @@ const CertificateChecker = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4 animate-fadeIn">
             <a
-              href="https://www.linkedin.com/in/praneethbabu2003"
+              href="https://in.linkedin.com/company/brainovision"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[#0A66C2] text-white rounded-full font-semibold hover:bg-[#084c99] transition duration-300"
@@ -118,7 +118,7 @@ const CertificateChecker = () => {
               🔗 LinkedIn (LI)
             </a>
             <a
-              href="https://youtube.com/@praneethbabu"
+              href="https://www.youtube.com/@brainovision"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[#FF0000] text-white rounded-full font-semibold hover:bg-[#cc0000] transition duration-300"
@@ -126,7 +126,7 @@ const CertificateChecker = () => {
               📺 YouTube (YT)
             </a>
             <a
-              href="https://instagram.com/praneethbabu"
+              href="https://www.instagram.com/brainovision/#"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white rounded-full font-semibold hover:opacity-90 transition duration-300"
