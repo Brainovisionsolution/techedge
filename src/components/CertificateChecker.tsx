@@ -144,7 +144,16 @@ const CertificateChecker = () => {
           </div>
         </div>
       </div>
-
+<div className="animate-fadeIn">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfLmUn0uUmVnmwI-t4sJHb3Z4bL8ozBwXFDof8oz9rhFb4wvQ/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-full transition duration-300 mb-6"
+  >
+    📝 If you have any certificate-related issues, submit the form here
+  </a>
+</div>
       {/* Google Sheet Embed */}
       <div className="w-full max-w-5xl mt-10 text-white">
         <h3 className="text-center text-xl font-semibold mb-4 text-yellow-400">
