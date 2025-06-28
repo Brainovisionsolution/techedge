@@ -110,7 +110,7 @@ const CertificateChecker = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4 animate-fadeIn">
             <a
-              href="https://in.linkedin.com/company/brainovision"
+              href="https://www.linkedin.com/in/praneethbabu2003"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[#0A66C2] text-white rounded-full font-semibold hover:bg-[#084c99] transition duration-300"
@@ -118,7 +118,7 @@ const CertificateChecker = () => {
               🔗 LinkedIn (LI)
             </a>
             <a
-              href="https://www.youtube.com/@brainovision"
+              href="https://youtube.com/@praneethbabu"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[#FF0000] text-white rounded-full font-semibold hover:bg-[#cc0000] transition duration-300"
@@ -134,7 +134,7 @@ const CertificateChecker = () => {
               📸 Instagram (IG)
             </a>
             <a
-              href="https://www.instagram.com/brainovision/#"
+              href="https://wa.me/919063611159"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[#25D366] text-white rounded-full font-semibold hover:bg-[#1ebc59] transition duration-300"
@@ -152,7 +152,7 @@ const CertificateChecker = () => {
         </h3>
         <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-[#00D1FF]/20 h-[900px]">
           <iframe
-            src="https://docs.google.com/spreadsheets/d/1F5Ho9L9nOjgUr8Z0kSh6xjXbH3vRbcYtWZ/edit?usp=sharing"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRD87_Sptnv3SkYR2Q2FnHcoW9-JA6E4_gylbz0G5u_HQf-qZleLJaYWZSale7uv0vRtlp4A7zMB1JK/pubhtml?gid=1247140652&amp;single=true&amp;widget=true&amp;headers=false"
             title="Certificate Status"
             className="w-full h-full"
             frameBorder="0"
