@@ -4,31 +4,32 @@ const MODES = {
   student: {
     label: "Participation",
     heading:
-      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP)- Participation",
+      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Participation",
     apiURL:
       "https://script.google.com/macros/s/AKfycby0u5zwdujcgOH3aLMnsSz0lv1V6iLnHJyn66WFtjX4iNhkp1JZqCUpCKdKY7gY-Hc/exec",
     sheetURL:
       "https://docs.google.com/spreadsheets/d/e/2PACX-1vRD87_Sptnv3SkYR2Q2FnHcoW9-JA6E4_gylbz0G5u_HQf-qZleLJaYWZSale7uv0vRtlp4A7zMB1JK/pubhtml?gid=1247140652&single=true&widget=true&headers=false",
   },
   faculty: {
-    label: " Faculty and Cordinaters",
+    label: "Faculty and Coordinators",
     heading:
-      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Faculty and Cordinaters",
+      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Faculty and Coordinators",
     apiURL:
       "https://script.google.com/macros/s/YOUR_FACULTY_API_URL/exec",
     sheetURL:
       "https://docs.google.com/spreadsheets/d/YOUR_FACULTY_SHEET_LINK/pubhtml?gid=0&single=true&widget=true&headers=false",
   },
   hostCollege: {
-    label: "Host College Apperciation",
+    label: "Host College Appreciation",
     heading:
-      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Host College Apperciation",
+      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Host College Appreciation",
     apiURL:
       "https://script.google.com/macros/s/YOUR_HOST_COLLEGE_API_URL/exec",
     sheetURL:
       "https://docs.google.com/spreadsheets/d/YOUR_HOST_COLLEGE_SHEET_LINK/pubhtml?gid=0&single=true&widget=true&headers=false",
   },
 };
+
 
 const CertificateChecker = () => {
   const [mode, setMode] = useState<keyof typeof MODES>("student");
