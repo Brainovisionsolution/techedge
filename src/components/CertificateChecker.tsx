@@ -1,6 +1,37 @@
 import React, { useState } from "react";
 
+const MODES = {
+  student: {
+    label: "🎓 Students",
+    heading:
+      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP)",
+    apiURL:
+      "https://script.google.com/macros/s/AKfycby0u5zwdujcgOH3aLMnsSz0lv1V6iLnHJyn66WFtjX4iNhkp1JZqCUpCKdKY7gY-Hc/exec",
+    sheetURL:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vRD87_Sptnv3SkYR2Q2FnHcoW9-JA6E4_gylbz0G5u_HQf-qZleLJaYWZSale7uv0vRtlp4A7zMB1JK/pubhtml?gid=1247140652&single=true&widget=true&headers=false",
+  },
+  faculty: {
+    label: "🧑‍🏫 Faculty",
+    heading:
+      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Faculty",
+    apiURL:
+      "https://script.google.com/macros/s/YOUR_FACULTY_API_URL/exec",
+    sheetURL:
+      "https://docs.google.com/spreadsheets/d/YOUR_FACULTY_SHEET_LINK/pubhtml?gid=0&single=true&widget=true&headers=false",
+  },
+  hostCollege: {
+    label: "🏛️ Host College",
+    heading:
+      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Host College",
+    apiURL:
+      "https://script.google.com/macros/s/YOUR_HOST_COLLEGE_API_URL/exec",
+    sheetURL:
+      "https://docs.google.com/spreadsheets/d/YOUR_HOST_COLLEGE_SHEET_LINK/pubhtml?gid=0&single=true&widget=true&headers=false",
+  },
+};
+
 const CertificateChecker = () => {
+  const [mode, setMode] = useState<keyof typeof MODES>("student");
   const [email, setEmail] = useState("");
   const [result, setResult] = useState<null | {
     name: string;
@@ -19,7 +50,7 @@ const CertificateChecker = () => {
 
     try {
       const response = await fetch(
-        `https://script.google.com/macros/s/AKfycby0u5zwdujcgOH3aLMnsSz0lv1V6iLnHJyn66WFtjX4iNhkp1JZqCUpCKdKY7gY-Hc/exec?email=${encodeURIComponent(email)}`
+        `${MODES[mode].apiURL}?email=${encodeURIComponent(email)}`
       );
       const data = await response.json();
 
@@ -41,11 +72,27 @@ const CertificateChecker = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1E1656] to-[#322C70] px-4 py-10 flex flex-col items-center space-y-12">
+      
+      {/* Mode Toggle Buttons */}
+      <div className="flex gap-4 mt-6 flex-wrap justify-center">
+        {Object.keys(MODES).map((key) => (
+          <button
+            key={key}
+            onClick={() => setMode(key as keyof typeof MODES)}
+            className={`px-4 py-2 rounded-full font-semibold ${
+              mode === key
+                ? "bg-yellow-400 text-black"
+                : "bg-white text-black hover:bg-gray-200"
+            } transition duration-300`}
+          >
+            {MODES[key as keyof typeof MODES].label}
+          </button>
+        ))}
+      </div>
 
       {/* Title */}
-      <h1 className="mt-[100px] text-white text-4xl md:text-5xl font-bold text-center leading-tight animate-fadeIn">
-        National-Level Workshop on Application Development <br className="hidden md:block" />
-        with AI & Essential Skills (ESTP)
+      <h1 className="mt-[30px] text-white text-4xl md:text-5xl font-bold text-center leading-tight animate-fadeIn">
+        {MODES[mode].heading}
       </h1>
 
       <div className="flex flex-col md:flex-row gap-12 justify-center items-start w-full max-w-6xl">
@@ -103,7 +150,7 @@ const CertificateChecker = () => {
           )}
         </div>
 
-        {/* Join Our Communities - Text Buttons */}
+        {/* Join Communities */}
         <div className="w-full md:max-w-sm flex flex-col items-center justify-center">
           <h3 className="text-white text-2xl md:text-3xl font-bold mb-6 animate-fadeIn">
             🤝 Join Our Communities
@@ -144,24 +191,27 @@ const CertificateChecker = () => {
           </div>
         </div>
       </div>
-<div className="animate-fadeIn">
-  <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLSfLmUn0uUmVnmwI-t4sJHb3Z4bL8ozBwXFDof8oz9rhFb4wvQ/viewform"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-full transition duration-300 mb-6"
-  >
-    📝 If you have any certificate-related issues, submit the form here
-  </a>
-</div>
-      {/* Google Sheet Embed */}
+
+      {/* Certificate Issue Form */}
+      <div className="animate-fadeIn">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfLmUn0uUmVnmwI-t4sJHb3Z4bL8ozBwXFDof8oz9rhFb4wvQ/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-full transition duration-300 mb-6"
+        >
+          📝 If you have any certificate-related issues, submit the form here
+        </a>
+      </div>
+
+      {/* Google Sheet */}
       <div className="w-full max-w-5xl mt-10 text-white">
         <h3 className="text-center text-xl font-semibold mb-4 text-yellow-400">
-          📋 If you can't find your certificate above, please check your Host College Certificate Template Status Below :
+          📋 If you can't find your certificate above, please check your status below:
         </h3>
         <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-[#00D1FF]/20 h-[900px]">
           <iframe
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRD87_Sptnv3SkYR2Q2FnHcoW9-JA6E4_gylbz0G5u_HQf-qZleLJaYWZSale7uv0vRtlp4A7zMB1JK/pubhtml?gid=1247140652&amp;single=true&amp;widget=true&amp;headers=false"
+            src={MODES[mode].sheetURL}
             title="Certificate Status"
             className="w-full h-full"
             frameBorder="0"
@@ -169,7 +219,7 @@ const CertificateChecker = () => {
         </div>
       </div>
 
-      {/* Fade In Animation */}
+      {/* Animation Styles */}
       <style>
         {`
           .animate-fadeIn {
