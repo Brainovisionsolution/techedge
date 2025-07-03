@@ -15,7 +15,7 @@ const MODES = {
     heading:
       "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Faculty and Coordinators",
     apiURL:
-      "https://script.google.com/macros/s/YOUR_FACULTY_API_URL/exec",
+      "https://script.google.com/macros/s/AKfycbzJDRa-c6gq23gNXp_8gqLNV5Et4dye6EB50Vv0Z0h03I1MNkVg3rm_YHGBHobqiCtkbw/exec",
     sheetURL:
       "https://docs.google.com/spreadsheets/d/YOUR_FACULTY_SHEET_LINK/pubhtml?gid=0&single=true&widget=true&headers=false",
   },
