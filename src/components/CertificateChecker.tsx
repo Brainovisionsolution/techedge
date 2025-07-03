@@ -11,13 +11,13 @@ const MODES = {
       "https://docs.google.com/spreadsheets/d/e/2PACX-1vRD87_Sptnv3SkYR2Q2FnHcoW9-JA6E4_gylbz0G5u_HQf-qZleLJaYWZSale7uv0vRtlp4A7zMB1JK/pubhtml?gid=1247140652&single=true&widget=true&headers=false",
   },
   faculty: {
-    label: "Faculty and Coordinators",
+    label: "Faculty Coordinators",
     heading:
-      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Faculty and Coordinators",
+      "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Faculty Coordinators",
     apiURL:
       "https://script.google.com/macros/s/AKfycbzJDRa-c6gq23gNXp_8gqLNV5Et4dye6EB50Vv0Z0h03I1MNkVg3rm_YHGBHobqiCtkbw/exec",
     sheetURL:
-      "https://docs.google.com/spreadsheets/d/YOUR_FACULTY_SHEET_LINK/pubhtml?gid=0&single=true&widget=true&headers=false",
+      "",
   },
   hostCollege: {
     label: "Host College Appreciation",
@@ -26,7 +26,7 @@ const MODES = {
     apiURL:
       "https://script.google.com/macros/s/AKfycbxL0n-73Dv6csS1wy7mgJ7QMfkINy2IRswX_yl3soCIlLL6q2J2mu01IvYdd5K4tWWs/exec",
     sheetURL:
-      "https://docs.google.com/spreadsheets/d/YOUR_HOST_COLLEGE_SHEET_LINK/pubhtml?gid=0&single=true&widget=true&headers=false",
+      "",
   },
 };
 
