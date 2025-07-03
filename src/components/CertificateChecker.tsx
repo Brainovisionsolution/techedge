@@ -24,7 +24,7 @@ const MODES = {
     heading:
       "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Host College Appreciation",
     apiURL:
-      "https://script.google.com/macros/s/YOUR_HOST_COLLEGE_API_URL/exec",
+      "https://script.google.com/macros/s/AKfycbxL0n-73Dv6csS1wy7mgJ7QMfkINy2IRswX_yl3soCIlLL6q2J2mu01IvYdd5K4tWWs/exec",
     sheetURL:
       "https://docs.google.com/spreadsheets/d/YOUR_HOST_COLLEGE_SHEET_LINK/pubhtml?gid=0&single=true&widget=true&headers=false",
   },
