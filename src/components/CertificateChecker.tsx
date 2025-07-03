@@ -16,8 +16,7 @@ const MODES = {
       "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Faculty Coordinators",
     apiURL:
       "https://script.google.com/macros/s/AKfycbzJDRa-c6gq23gNXp_8gqLNV5Et4dye6EB50Vv0Z0h03I1MNkVg3rm_YHGBHobqiCtkbw/exec",
-    sheetURL:
-      "",
+    sheetURL: "",
   },
   hostCollege: {
     label: "Host College Appreciation",
@@ -25,11 +24,9 @@ const MODES = {
       "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Host College Appreciation",
     apiURL:
       "https://script.google.com/macros/s/AKfycbxL0n-73Dv6csS1wy7mgJ7QMfkINy2IRswX_yl3soCIlLL6q2J2mu01IvYdd5K4tWWs/exec",
-    sheetURL:
-      "",
+    sheetURL: "",
   },
 };
-
 
 const CertificateChecker = () => {
   const [mode, setMode] = useState<keyof typeof MODES>("student");
@@ -73,20 +70,19 @@ const CertificateChecker = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1E1656] to-[#322C70] px-4 py-10 flex flex-col items-center space-y-12">
-      
       {/* Mode Toggle Buttons */}
       <div className="flex gap-4 mt-6 flex-wrap justify-center">
-        {Object.keys(MODES).map((key) => (
+        {Object.entries(MODES).map(([key, value]) => (
           <button
             key={key}
             onClick={() => setMode(key as keyof typeof MODES)}
-            className={`px-4 py-2 rounded-full font-semibold ${
+            className={`px-6 py-3 rounded-full font-semibold text-sm tracking-wide shadow-md transition duration-300 border-2 ${
               mode === key
-                ? "bg-yellow-400 text-black"
-                : "bg-white text-black hover:bg-gray-200"
-            } transition duration-300`}
+                ? "bg-yellow-400 border-yellow-500 text-black scale-105"
+                : "bg-white text-black border-gray-300 hover:bg-gray-100"
+            }`}
           >
-            {MODES[key as keyof typeof MODES].label}
+            {value.label}
           </button>
         ))}
       </div>
@@ -97,7 +93,6 @@ const CertificateChecker = () => {
       </h1>
 
       <div className="flex flex-col md:flex-row gap-12 justify-center items-start w-full max-w-6xl">
-
         {/* Certificate Panel */}
         <div className="bg-white text-black p-8 rounded-2xl shadow-2xl w-full md:max-w-md">
           <h2 className="text-3xl font-bold text-center text-[#4A2CD4] mb-6">
@@ -205,20 +200,22 @@ const CertificateChecker = () => {
         </a>
       </div>
 
-      {/* Google Sheet */}
-      <div className="w-full max-w-5xl mt-10 text-white">
-        <h3 className="text-center text-xl font-semibold mb-4 text-yellow-400">
-          📋 If you can't find your certificate above, please check your status below:
-        </h3>
-        <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-[#00D1FF]/20 h-[900px]">
-          <iframe
-            src={MODES[mode].sheetURL}
-            title="Certificate Status"
-            className="w-full h-full"
-            frameBorder="0"
-          ></iframe>
+      {/* Conditionally Render Google Sheet */}
+      {MODES[mode].sheetURL && (
+        <div className="w-full max-w-5xl mt-10 text-white animate-fadeIn">
+          <h3 className="text-center text-xl font-semibold mb-4 text-yellow-400">
+            📋 If you can't find your certificate above, please check your status below:
+          </h3>
+          <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-[#00D1FF]/20 h-[900px]">
+            <iframe
+              src={MODES[mode].sheetURL}
+              title="Certificate Status"
+              className="w-full h-full"
+              frameBorder="0"
+            ></iframe>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Animation Styles */}
       <style>
