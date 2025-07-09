@@ -44,7 +44,7 @@ const programs: Program[] = [
     id: 'java-fullstack',
     title: 'SHORT TERM TRAINING PROGRAM (STTP) ON JAVA FULL STACK BY USING REACT AND AI',
     status: 'completed',
-    dates: '02nd to 24th JAN 2024',
+    dates: '02nd to 24th JAN 2025',
     time: '07:00 PM to 09:00 PM',
     audience: 'Faculties & Students',
     hostFee: '14999',
@@ -79,8 +79,8 @@ const programs: Program[] = [
     status: 'coming_soon',
     dates: '4th - 8th, AUG 2025',
     time: '07:00 PM to 08:00 PM',
-    audience: 'All Students , Researchers & Faculties',
-    hostFee: '14999',
+    audience: 'Faculty, Researchers, and Academicians',
+    hostFee: '1999',
     participantFee: '9',
     mode: 'Virtual (Zoom & YouTube Live)'
   },
@@ -91,7 +91,7 @@ const programs: Program[] = [
     dates: '15th - 19th, SEP 2025',
     time: '07:00 PM to 08:00 PM',
     audience: 'Students, Professionals, Researchers, and Educators globally',
-    hostFee: '9999',
+    hostFee: '1999',
     participantFee: '9',
     mode: 'Virtual (Zoom & YouTube Live)'
   }
