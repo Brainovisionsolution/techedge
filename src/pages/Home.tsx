@@ -232,7 +232,7 @@ const Home = () => {
                 View Programs
               </a>
               <a href="https://rzp.io/l/lvQf1hGN" className="px-8 py-3 bg-transparent border-2 border-[#00D1FF] text-[#00D1FF] rounded-full hover:bg-[#00D1FF] hover:text-black transition-colors font-semibold">
-                EDU-PLAN @ ₹2999
+                EDU-PLAN @ ₹1999
               </a>
             </div>
           </div>
