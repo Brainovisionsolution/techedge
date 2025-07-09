@@ -65,7 +65,7 @@ const Hero = () => {
                 href="#edu-plan"
                 className="px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-full font-semibold hover:bg-cyan-400/10 transition-colors"
               >
-                EDU-PLAN @ ₹3999
+                EDU-PLAN @ ₹1999
               </a>
             </div>
           </div>
