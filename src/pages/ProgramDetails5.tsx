@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, Users, Award, Download, FileText, Brain } from 'lucide-react';
 
 const programs = {
-  'career-dev': {
+  'gen-ai': {
     title: 'International Career Development Program on SDG, ESG, and Industry Innovations',
     dates: '15th – 19th September 2025',
     time: '07:00 PM to 08:00 PM (IST)',
@@ -76,7 +76,7 @@ Mr. Bala Prasad has been a guiding light for digital transformation in leading e
   }
 };
 
-const ProgramDetails4 = () => {
+const ProgramDetails5 = () => {
   const { id } = useParams();
   const program = programs[id as keyof typeof programs];
 
@@ -190,4 +190,4 @@ const ProgramDetails4 = () => {
   );
 };
 
-export default ProgramDetails4;
+export default ProgramDetails5;
