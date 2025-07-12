@@ -2,8 +2,9 @@
 import { useParams } from 'react-router-dom';
 import ProgramDetails1 from './ProgramDetails1';
 import ProgramDetails2 from './ProgramDetails2';
-import ProgramDetails3 from './ProgramDetails4';
-import ProgramDetails4 from './ProgramDetails5';
+import ProgramDetails3 from './ProgramDetails3';
+import ProgramDetails4 from './ProgramDetails4';
+import ProgramDetails5 from './ProgramDetails5';
 
 export default function ProgramDetails() {
   const { id } = useParams();
@@ -18,8 +19,9 @@ export default function ProgramDetails() {
     case 'career-dev':
       return <ProgramDetails4 />;
     case 'gen-ai':
-      return <ProgramDetails3 />;   // or ProgramDetails5, etc.
+      return <ProgramDetails5 />;   // or ProgramDetails5, etc.
     default:
       return <h2 className="text-white text-center mt-10">Program not found</h2>;
   }
 }
+
