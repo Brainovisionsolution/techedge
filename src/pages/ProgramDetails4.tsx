@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, Users, Award, Download, FileText, Brain } from 'lucide-react';
 
 const programs = {
-  'essential-skills': {
+  'career-dev': {
     title: 'National Level Faculty Development Program (FDP) on Generative AI',
     dates: '4th August  – 8th August 2025',
     time: '07:00 PM to 08:00 PM (IST)',
@@ -77,7 +77,7 @@ Mr. Bala Prasad has been a guiding light for digital transformation in leading e
   }
 };
 
-const ProgramDetails3 = () => {
+const ProgramDetails4 = () => {
   const { id } = useParams();
   const program = programs[id as keyof typeof programs];
 
@@ -210,4 +210,4 @@ const ProgramDetails3 = () => {
   );
 };
 
-export default ProgramDetails3;
+export default ProgramDetails4;
