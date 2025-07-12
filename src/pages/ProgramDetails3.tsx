@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, Users, Award, Download, FileText, Brain } from 'lucide-react';
 
 const programs = {
-  'ai-faculty': {
+  'essential-skills': {
     title: 'NATIONAL LEVEL ESSENTIAL SKILLS TRAINING PROGRAM (ESTP) FOR STUDENTS & FACULTY',
     dates: 'June 23rd to June 27th, 2025',
     time: '07:00 PM to 08:30 PM',
@@ -71,7 +71,7 @@ Mr. Bala Prasad has been a guiding light for digital transformation in leading e
   }
 };
 
-const ProgramDetails2 = () => {
+const ProgramDetails3 = () => {
   const { id } = useParams();
   const program = programs[id as keyof typeof programs];
 
@@ -184,4 +184,4 @@ const ProgramDetails2 = () => {
   );
 };
 
-export default ProgramDetails2;
+export default ProgramDetails3;
