@@ -8,7 +8,7 @@ const programs = {
     title: 'International Career Development Program on SDG, ESG, and Industry Innovations',
     dates: '15th – 19th September 2025',
     time: '07:00 PM to 08:00 PM (IST)',
-    audience: 'students, Professionals, Researchers, and Educators globally',
+    audience: 'Students, Professionals, Researchers, and Educators globally',
     fee: '9',
     registrationLinks: {
       college: 'https://rzp.io/l/lvQf1hGN',
