@@ -12,7 +12,7 @@ const programs = {
     fee: '9',
     registrationLinks: {
       college: 'https://rzp.io/l/lvQf1hGN',
-      student: 'https://rzp.io/rzp/jkT2kL0u'
+      participant: 'https://rzp.io/rzp/jkT2kL0u'
     },
     brochureLink: 'https://brainovision.in/host-college',
     overview: {
