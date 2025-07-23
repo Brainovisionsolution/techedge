@@ -12,7 +12,7 @@ const programs = {
     fee: '9',
     registrationLinks: {
       college: 'https://rzp.io/l/lvQf1hGN',
-      participant: 'https://rzp.io/rzp/jkT2kL0u'
+      student: 'https://rzp.io/rzp/jkT2kL0u'
     },
     brochureLink: 'https://brainovision.in/host-college',
     overview: {
@@ -116,7 +116,7 @@ const ProgramDetails4 = () => {
           </div>
           <div className="space-y-4">
             <button onClick={() => window.open(program.registrationLinks.college)} className="w-full bg-[#00D1FF] py-2 rounded">Host College Registration</button>
-            <button onClick={() => window.open(program.registrationLinks.student)} className="w-full bg-[#FFD700] text-black py-2 rounded">Student Registration</button>
+            <button onClick={() => window.open(program.registrationLinks.student)} className="w-full bg-[#FFD700] text-black py-2 rounded">Participant Registration</button>
             <button onClick={() => window.open(program.brochureLink)} className="w-full bg-gradient-to-r from-[#00D1FF] to-[#FFD700] text-black py-2 rounded">Download Brochure</button>
           </div>
         </div>
