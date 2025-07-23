@@ -39,16 +39,17 @@ Mr. Bala Prasad has been a guiding light for digital transformation in leading e
         bio: `Organized faculty development programs with Brainovision Solutions India Pvt. Ltd., attended by over 30,000+ participants and recognized in the India Book of Records for its scale and reach. His expertise in event coordination has earned multiple awards, including the Bharat Education Excellence Awards.`
       },
       coreTeam: [
+           {
+          name: 'P.Tejaswi',
+          title: 'Program Head - Techedge Bootcamps',
+          photo: '/logos/teja.jpg'
+        },
         {
           name: 'R. Mounasri',
           title: 'Director Of Client Relations',
           photo: '/logos/mounasri.jpg'
         },
-        {
-          name: 'P.Tejaswi',
-          title: 'Program Head - Techedge Bootcamps',
-          photo: '/logos/teja.jpg'
-        },
+     
 
         {
           name: 'N. Narayana Swamy',
