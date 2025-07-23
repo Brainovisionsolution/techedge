@@ -57,11 +57,11 @@ Mr. Bala Prasad has been a guiding light for digital transformation in leading e
         }
       ],
       syllabus: [
-        'DAY 1. AI-Powered Application Development for Innovation',
-        'DAY 2. Google & Microsoft Tools for Real-World Efficiency',
-        'DAY 3. Low-Code/No-Code Approach for Broader Accessibility',
-        'DAY 4. Industry-Relevant Skills for Career Growth',
-        'DAY 5. Practical, Hands-on Learning for Immediate Application'
+'Day 1: Introduction to Generative AI & Its Academic Relevance',
+'Day 2: Using GenAI for Teaching & Content Creation',
+'Day 3: Using GenAI for Research: Idea Generation, Literature Review, and Paper Structuring',
+'Day 4: Image, Presentation & Document Generation with GenAI',
+'Day 5: Simple AI Coding & Creating Custom Tools'
       ]
     },
     certificates: {
