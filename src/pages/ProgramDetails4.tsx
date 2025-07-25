@@ -14,7 +14,7 @@ const programs = {
       college: 'https://rzp.io/l/lvQf1hGN',
       student: 'https://rzp.io/rzp/jkT2kL0u'
     },
-    brochureLink: 'https://brainovision.in/host-college',
+    brochureLink: 'https://drive.google.com/file/d/1GzURkIiI2jrSHGGMRVuAuILE_Uq0IFN3/view?pli=1',
     overview: {
       chiefGuests: [
         {
