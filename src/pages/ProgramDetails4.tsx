@@ -17,20 +17,15 @@ const programs = {
     brochureLink: 'https://drive.google.com/file/d/1GzURkIiI2jrSHGGMRVuAuILE_Uq0IFN3/view?pli=1',
     overview: {
       chiefGuests: [
-        {
-          name: 'I V S Ranganath',
-          title: 'Head – HR (India), Shriram Bioseed Genetics – DCM Shriram Ltd.',
-          photo: '/logos/ChiefGuest.jpg',
-          bio: `I V S Ranganath is a seasoned HR leader with 20+ years of cross‑industry experience spanning manufacturing, FMCG, telecom, engineering, and agriculture. Currently serving as Head – HR (India) at Shriram Bioseed Genetics (DCM Shriram Ltd.), he is widely recognized for pioneering agile, human‑centric HR strategies.`
-        },
-       {
-  name: 'Mr. Bala Prasad Peddigari',
-  title: 'Chief Innovation Officer and Global Head – Technology Advisory Services, TSS Business Group',
-  photo: '/logos/ChiefGuest1.jpg',
-  bio: `We are honored to welcome Mr. Bala Prasad Peddigari, Chief Innovation Officer and Global Head – Technology Advisory Services, Technology, Software and Services Business Group.
+        
+  {
+    name: 'Mr. Rajiv Atluri',
+    title: 'Center Head HR, TA & Operations – India Center at GERAB NATIONAL ENTERPRISES LLC',
+    photo: '/logos/ChiefGuest.jpg',
+    bio: `We are honored to welcome Mr. Rajiv Atluri — Strategic Advisor, Mentor, and Philanthropist — as our esteemed guest at the 1-Week National Level FDP on Generative AI. With 18+ years of experience in Business Operations, HR, and Talent Acquisition, he has worked with renowned organizations like Monster.com and Times Group. A double post-graduate from IIM-Ranchi, Mr. Atluri’s insights into leadership and talent development will greatly enrich the program.`
+  }
 
-Mr. Bala Prasad has been a guiding light for digital transformation in leading enterprises. His expertise in future technologies from AI and cloud to enterprise strategy and innovation ecosystems has left a significant mark on the global tech landscape.`
-}
+
       ],
       leadTrainer: {
         name: 'N. Narayana Swamy',
@@ -212,3 +207,4 @@ const ProgramDetails4 = () => {
 };
 
 export default ProgramDetails4;
+
