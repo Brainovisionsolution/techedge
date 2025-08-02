@@ -16,7 +16,7 @@ const programs = {
     },
     brochureLink: 'https://drive.google.com/file/d/1GzURkIiI2jrSHGGMRVuAuILE_Uq0IFN3/view?pli=1',
     overview: {
-      chiefGuests: [
+      chiefGuest: [
         
   {
     name: 'Mr. Rajiv Atluri',
@@ -207,6 +207,7 @@ const ProgramDetails4 = () => {
 };
 
 export default ProgramDetails4;
+
 
 
 
