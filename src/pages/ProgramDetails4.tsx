@@ -16,7 +16,7 @@ const programs = {
     },
     brochureLink: 'https://drive.google.com/file/d/1GzURkIiI2jrSHGGMRVuAuILE_Uq0IFN3/view?pli=1',
     overview: {
-      chiefGuest: [
+      chiefGuests: [
         
   {
     name: 'Mr. Rajiv Atluri',
@@ -118,7 +118,7 @@ const ProgramDetails4 = () => {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#00D1FF] mb-4">Chief Guests</h2>
+          <h2 className="text-2xl font-bold text-[#00D1FF] mb-4">Chief Guest</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {program.overview.chiefGuests.map((guest, idx) => (
               <div key={idx} className="bg-white/10 rounded-lg p-6 border border-[#00D1FF]/30">
@@ -207,6 +207,7 @@ const ProgramDetails4 = () => {
 };
 
 export default ProgramDetails4;
+
 
 
 
