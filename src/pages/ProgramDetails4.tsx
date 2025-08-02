@@ -21,7 +21,7 @@ const programs = {
   {
     name: 'Mr. Rajiv Atluri',
     title: 'Center Head HR, TA & Operations – India Center at GERAB NATIONAL ENTERPRISES LLC',
-    photo: '/logos/chiefguest.jpg',
+    photo: '/logos/chiefguest3.jpg',
     bio: `We are honored to welcome Mr. Rajiv Atluri — Strategic Advisor, Mentor, and Philanthropist — as our esteemed guest at the 1-Week National Level FDP on Generative AI. With 18+ years of experience in Business Operations, HR, and Talent Acquisition, he has worked with renowned organizations like Monster.com and Times Group. A double post-graduate from IIM-Ranchi, Mr. Atluri’s insights into leadership and talent development will greatly enrich the program.`
   }
 
@@ -207,5 +207,6 @@ const ProgramDetails4 = () => {
 };
 
 export default ProgramDetails4;
+
 
 
