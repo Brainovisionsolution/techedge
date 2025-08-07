@@ -29,7 +29,7 @@ const programs = {
     photo: '/logos/ChiefGuest4.jpg',
     bio: `We are privileged to host Mr. Gundala Nagaraju (Raju), a seasoned IT Business & Technology Leader with extensive experience in bridging the gap between cutting-edge technology and business-driven solutions. He is also an Edupreneur, Adjunct Professor, Lead Auditor (ISO 42001:2023), and President – TAA IIT Kharagpur Hyderabad Chapter. He currently serves as CEO at SmartMieten Tech Pvt Ltd and holds credentials from IIM Calcutta. His presence brings tremendous value to our program.`
   }
-];
+],
 
       leadTrainer: {
         name: 'N. Narayana Swamy',
@@ -211,6 +211,7 @@ const ProgramDetails4 = () => {
 };
 
 export default ProgramDetails4;
+
 
 
 
