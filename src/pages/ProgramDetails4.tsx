@@ -16,17 +16,21 @@ const programs = {
     },
     brochureLink: 'https://drive.google.com/file/d/1GzURkIiI2jrSHGGMRVuAuILE_Uq0IFN3/view?pli=1',
     overview: {
-      chiefGuests: [
-        
+    const chiefGuests = [
   {
     name: 'Mr. Rajiv Atluri',
     title: 'Center Head HR, TA & Operations – India Center at GERAB NATIONAL ENTERPRISES LLC',
     photo: '/logos/chiefguest3.png',
     bio: `We are honored to welcome Mr. Rajiv Atluri — Strategic Advisor, Mentor, and Philanthropist — as our esteemed guest at the 1-Week National Level FDP on Generative AI. With 18+ years of experience in Business Operations, HR, and Talent Acquisition, he has worked with renowned organizations like Monster.com and Times Group. A double post-graduate from IIM-Ranchi, Mr. Atluri’s insights into leadership and talent development will greatly enrich the program.`
+  },
+  {
+    name: 'Gundala Nagaraju (Raju)',
+    title: 'CEO | IT Business & Technology Leader, Hyderabad - India',
+    photo: '/logos/ChiefGuest4.jpg',
+    bio: `We are privileged to host Mr. Gundala Nagaraju (Raju), a seasoned IT Business & Technology Leader with extensive experience in bridging the gap between cutting-edge technology and business-driven solutions. He is also an Edupreneur, Adjunct Professor, Lead Auditor (ISO 42001:2023), and President – TAA IIT Kharagpur Hyderabad Chapter. He currently serves as CEO at SmartMieten Tech Pvt Ltd and holds credentials from IIM Calcutta. His presence brings tremendous value to our program.`
   }
+];
 
-
-      ],
       leadTrainer: {
         name: 'N. Narayana Swamy',
         title: 'Technical Head & Director Of Operations',
@@ -207,6 +211,7 @@ const ProgramDetails4 = () => {
 };
 
 export default ProgramDetails4;
+
 
 
 
