@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const FACULTY_MODE = {
   label: "Faculty Coordinators",
   heading:
-    "National-Level Workshop on Application Development with AI & Essential Skills (ESTP) - Faculty Coordinators",
+    "National Level Faculty Development Program (FDP) on Generative AI",
   apiURL:
     "https://script.google.com/macros/s/AKfycbx7HoPh8JW78KVBpZdoDNKYZBFGtzJXDYkDnNCCsaq3v7AMwbwhBudU4M1BLtUffW3M/exec",
   sheetURL: "",
@@ -180,3 +180,4 @@ const FacultyCertificateChecker = () => {
 };
 
 export default FacultyCertificateChecker;
+
