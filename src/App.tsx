@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProgramDetails from './pages/ProgramDetails';
-import SessionPage from './components/SessionPage';
+import Certificate from './components/certificates';
 import CertificateChecker from './components/CertificateChecker';
 
 
@@ -16,11 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/program/:id" element={<ProgramDetails />} />
-          <Route path="/session/:id" element={<SessionPage />} />
-
+         
           {/* ✅ New Route for Email-based Certificate Download */}
           <Route path="/certificates" element={<CertificateChecker />} />
-
+          <Route path="/program/career-dev/certificates" element={<Certificate/>}/>
           {/* ✅ New Route for Host College Registration */}
        
         </Routes>
