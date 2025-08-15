@@ -19,7 +19,7 @@ function App() {
          
           {/* ✅ New Route for Email-based Certificate Download */}
           <Route path="/certificates" element={<CertificateChecker />} />
-          <Route path="/program/career-dev/certificates" element={<Certificate/>}/>
+          <Route path="/program/gen-ai/certificates" element={<Certificate/>}/>
           {/* ✅ New Route for Host College Registration */}
        
         </Routes>
