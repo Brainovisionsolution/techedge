@@ -54,13 +54,14 @@ const programs = {
           photo: '/logos/swami.jpg'
         }
       ],
-      syllabus: [
-      Day 1: Inauguration + SDG & Design Thinking
-Day 2: Entrepreneurial Mindset
-Day 3: From Problems to Opportunities
-Day 4: Skills for Company Initiation
-Day 5: Pitching, Growth & Digital Marketing
-      ]
+     syllabus: [
+  "Day 1: Inauguration + SDG & Design Thinking",
+  "Day 2: Entrepreneurial Mindset",
+  "Day 3: From Problems to Opportunities",
+  "Day 4: Skills for Company Initiation",
+  "Day 5: Pitching, Growth & Digital Marketing",
+],
+
     },
     certificates: {
       college: '/logos/Host College Appreciation.png',
@@ -190,5 +191,6 @@ const ProgramDetails5 = () => {
 };
 
 export default ProgramDetails5;
+
 
 
