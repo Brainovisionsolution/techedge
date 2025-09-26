@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import ProgramDetails from './pages/ProgramDetails';
 import Certificate from './components/certificates';
 import CertificateChecker from './components/CertificateChecker';
+import SDGCertificateChecker from './components/certificates1';
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
           <Route path="/certificates" element={<CertificateChecker />} />
           <Route path="/career-dev/certificates" element={<Certificate/>}/>
           {/* ✅ New Route for Host College Registration */}
-       
+         <Route path="/dev/certificates" element={<SDGCertificateChecker/>}/>
+
         </Routes>
         <Footer />
       </div>
