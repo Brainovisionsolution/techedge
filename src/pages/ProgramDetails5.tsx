@@ -17,21 +17,20 @@ const programs = {
     brochureLink: 'https://brainovision.in/host-college',
     overview: {
       chiefGuests: [
-        {
-          name: 'I V S Ranganath',
-          title: 'Head – HR (India), Shriram Bioseed Genetics – DCM Shriram Ltd.',
-          photo: '/logos/ChiefGuest.jpg',
-          bio: `I V S Ranganath is a seasoned HR leader with 20+ years of cross‑industry experience spanning manufacturing, FMCG, telecom, engineering, and agriculture. Currently serving as Head – HR (India) at Shriram Bioseed Genetics (DCM Shriram Ltd.), he is widely recognized for pioneering agile, human‑centric HR strategies.`
-        },
-       {
-  name: 'Mr. Bala Prasad Peddigari',
-  title: 'Chief Innovation Officer and Global Head – Technology Advisory Services, TSS Business Group',
-  photo: '/logos/ChiefGuest1.jpg',
-  bio: `We are honored to welcome Mr. Bala Prasad Peddigari, Chief Innovation Officer and Global Head – Technology Advisory Services, Technology, Software and Services Business Group.
+  {
+    name: 'Dr. Sindhu',
+    title: 'Professor and Principal, JNTUH University College of Management, Hyderabad',
+    photo: '/logos/ChiefGuest.jpg',
+    bio: `Dr. Sindhu is a prominent academic and former Director of the School of Management Studies (SMS) at JNTUH, with expertise in Finance and HRM. She is currently the Professor and Principal of JNTUH University College of Management and has extensive experience in teaching, training, research, and student mentorship.`
+  },
+  {
+    name: 'Dr. Datchanamoorthy',
+    title: 'Author, Diplomat, and Global Youth Leader',
+    photo: '/logos/ChiefGuest1.jpg',
+    bio: `Dr. Datchanamoorthy sir is an Author, Diplomat, and Global Youth Leader, widely recognized for his dedicated work in advancing the United Nations Sustainable Development Goals (SDGs), Environmental, Social, and Governance (ESG) practices, and industry-driven innovations. Over the years, he has provided exceptional leadership in initiatives that bridge academia, industry, and global policy, fostering sustainable growth and human rights advocacy.`
+  }
+],
 
-Mr. Bala Prasad has been a guiding light for digital transformation in leading enterprises. His expertise in future technologies from AI and cloud to enterprise strategy and innovation ecosystems has left a significant mark on the global tech landscape.`
-}
-      ],
       leadTrainer: {
         name: 'N. Narayana Swamy',
         title: 'Technical Head & Director Of Operations',
@@ -191,3 +190,4 @@ const ProgramDetails5 = () => {
 };
 
 export default ProgramDetails5;
+
