@@ -76,7 +76,7 @@ const programs: Program[] = [
   {
     id: 'career-dev',
     title: 'National Level Faculty Development Program (FDP) on Generative AI',
-    status: 'active',
+    status: 'completed',
     dates: '4th - 8th, AUG 2025',
     time: '07:00 PM to 08:00 PM',
     audience: 'Faculty, Researchers, and Academicians',
@@ -87,7 +87,7 @@ const programs: Program[] = [
   {
     id: 'gen-ai',
     title: 'International Career Development Program on SDG, ESG, and Industry Innovations',
-    status: 'coming_soon',
+    status: 'completed',
     dates: '15th - 19th, SEP 2025',
     time: '07:00 PM to 08:00 PM',
     audience: 'Students, Professionals, Researchers, and Educators globally',
