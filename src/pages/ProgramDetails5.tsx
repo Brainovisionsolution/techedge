@@ -55,11 +55,11 @@ const programs = {
         }
       ],
       syllabus: [
-        'DAY 1. AI-Powered Application Development for Innovation',
-        'DAY 2. Google & Microsoft Tools for Real-World Efficiency',
-        'DAY 3. Low-Code/No-Code Approach for Broader Accessibility',
-        'DAY 4. Industry-Relevant Skills for Career Growth',
-        'DAY 5. Practical, Hands-on Learning for Immediate Application'
+      Day 1: Inauguration + SDG & Design Thinking
+Day 2: Entrepreneurial Mindset
+Day 3: From Problems to Opportunities
+Day 4: Skills for Company Initiation
+Day 5: Pitching, Growth & Digital Marketing
       ]
     },
     certificates: {
@@ -190,4 +190,5 @@ const ProgramDetails5 = () => {
 };
 
 export default ProgramDetails5;
+
 
