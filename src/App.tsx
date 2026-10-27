@@ -7,6 +7,7 @@ import ProgramDetails from './pages/ProgramDetails';
 import Certificate from './components/certificates';
 import CertificateChecker from './components/CertificateChecker';
 import SDGCertificateChecker from './components/certificates1';
+import SessionPage from './components/SessionPage';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
           <Route path="/certificates" element={<CertificateChecker />} />
           <Route path="/career-dev/certificates" element={<Certificate/>}/>
           {/* ✅ New Route for Host College Registration */}
-         <Route path="/dev/certificates" element={<SDGCertificateChecker/>}/>
+          <Route path="/dev/certificates" element={<SDGCertificateChecker/>}/>
+          <Route path="/session/:id" element={<SessionPage />} />
 
         </Routes>
         <Footer />

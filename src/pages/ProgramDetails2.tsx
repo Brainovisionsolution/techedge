@@ -1,7 +1,7 @@
 // src/pages/ProgramDetails.tsx
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Calendar, Clock, Users, Award, Download, FileText, Brain } from 'lucide-react';
+import { Calendar, Clock, Users, Award, Download, FileText, Brain, ArrowLeft } from 'lucide-react';
 
 const programs = {
   'ai-faculty': {
@@ -75,107 +75,204 @@ const ProgramDetails2 = () => {
   const { id } = useParams();
   const program = programs[id as keyof typeof programs];
 
+  if (!program) {
+    return (
+      <div className="pt-24 pb-20 min-h-screen bg-white flex items-center justify-center px-4">
+        <div className="text-center text-gray-900 text-xl max-w-2xl">
+          <p className="mb-6">Program not found.</p>
+          <Link
+            to="/"
+            className="inline-block bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold px-6 py-3 rounded-2xl hover:opacity-90 transition duration-300"
+          >
+            Back to Home
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="pt-16 min-h-screen bg-[#1E1656] text-white">
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold text-[#00D1FF] mb-6">{program.title}</h1>
+    <div className="pt-24 pb-20 min-h-screen bg-white text-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-orange-600 mb-8 transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to All Programs
+        </Link>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="space-y-3">
-            <p className="flex items-center gap-3"><Calendar className="text-[#FFD700]" /> {program.dates}</p>
-            <p className="flex items-center gap-3"><Clock className="text-[#FFD700]" /> {program.time}</p>
-            <p className="flex items-center gap-3"><Users className="text-[#FFD700]" /> {program.audience}</p>
-            <p className="flex items-center gap-3"><Award className="text-[#FFD700]" /> Participation Fee: ₹{program.fee}</p>
-          </div>
-          <div className="space-y-4">
-            <button onClick={() => window.open(program.registrationLinks.college)} className="w-full bg-[#00D1FF] py-2 rounded">Host College Registration</button>
-            <button onClick={() => window.open(program.registrationLinks.student)} className="w-full bg-[#FFD700] text-black py-2 rounded">Student Registration</button>
-            <button onClick={() => window.open(program.brochureLink)} className="w-full bg-gradient-to-r from-[#00D1FF] to-[#FFD700] text-black py-2 rounded">Download Brochure</button>
+        {/* Hero Card */}
+        <div className="bg-gradient-to-br from-orange-50/70 via-amber-50/40 to-white border border-orange-200/80 rounded-3xl p-8 sm:p-10 shadow-sm relative overflow-hidden mb-12">
+          <div className="max-w-4xl">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider text-orange-600 bg-white border border-orange-200 px-3 py-1 rounded-full shadow-xs mb-3">
+              Brainovision Flagship Program
+            </span>
+            <h1 className="text-2xl sm:text-4xl font-extrabold text-black tracking-tight leading-tight mb-6">
+              {program.title}
+            </h1>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-orange-200/60 mb-8">
+              <div>
+                <span className="block text-xs font-semibold uppercase tracking-wider text-gray-500">Dates</span>
+                <span className="text-sm sm:text-base font-bold text-orange-600 flex items-center gap-1.5 mt-1">
+                  <Calendar className="w-4 h-4 text-orange-500 shrink-0" />
+                  {program.dates}
+                </span>
+              </div>
+              <div>
+                <span className="block text-xs font-semibold uppercase tracking-wider text-gray-500">Timings</span>
+                <span className="text-sm sm:text-base font-bold text-gray-900 flex items-center gap-1.5 mt-1">
+                  <Clock className="w-4 h-4 text-orange-500 shrink-0" />
+                  {program.time}
+                </span>
+              </div>
+              <div>
+                <span className="block text-xs font-semibold uppercase tracking-wider text-gray-500">Audience</span>
+                <span className="text-sm sm:text-base font-bold text-gray-900 flex items-center gap-1.5 mt-1 truncate" title={program.audience}>
+                  <Users className="w-4 h-4 text-orange-500 shrink-0" />
+                  {program.audience}
+                </span>
+              </div>
+              <div>
+                <span className="block text-xs font-semibold uppercase tracking-wider text-gray-500">Participation Fee</span>
+                <span className="text-sm sm:text-base font-extrabold text-orange-600 flex items-center gap-1.5 mt-1">
+                  <Award className="w-4 h-4 text-amber-500 shrink-0" />
+                  ₹{program.fee}
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={() => window.open(program.registrationLinks.college)}
+                className="px-6 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-sm shadow-md transition-all cursor-pointer"
+              >
+                Host College Registration
+              </button>
+              <button
+                onClick={() => window.open(program.registrationLinks.student)}
+                className="px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-500 text-black font-bold text-sm shadow-md transition-all cursor-pointer"
+              >
+                Student Registration
+              </button>
+              <button
+                onClick={() => window.open(program.brochureLink)}
+                className="px-6 py-3 rounded-xl border border-gray-300 hover:border-orange-400 text-gray-800 hover:text-orange-600 font-semibold text-sm transition-all cursor-pointer"
+              >
+                Download Brochure
+              </button>
+            </div>
           </div>
         </div>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#00D1FF] mb-4">Chief Guests</h2>
+        {/* Chief Guests */}
+        <section className="mb-14">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-1.5 h-6 rounded-full bg-gradient-to-b from-orange-500 to-amber-500" />
+            <h2 className="text-2xl font-bold text-black">Chief Guests & Dignitaries</h2>
+          </div>
           <div className="grid md:grid-cols-2 gap-6">
             {program.overview.chiefGuests.map((guest, idx) => (
-              <div key={idx} className="bg-white/10 rounded-lg p-6 border border-[#00D1FF]/30">
+              <div key={idx} className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-orange-300 transition-all">
                 <div className="flex gap-4 items-center">
-                  <img src={guest.photo} alt={guest.name} className="w-20 h-20 rounded-full object-cover border-2 border-[#FFD700]" />
+                  <img src={guest.photo} alt={guest.name} className="w-20 h-20 rounded-2xl object-cover border-2 border-orange-400 shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-[#FFD700]">{guest.name}</h3>
-                    <p className="text-[#00D1FF]">{guest.title}</p>
+                    <h3 className="text-lg font-bold text-black">{guest.name}</h3>
+                    <p className="text-xs font-semibold text-orange-600 leading-snug mt-1">{guest.title}</p>
                   </div>
                 </div>
-                <p className="mt-4 text-gray-300">{guest.bio}</p>
+                <p className="mt-4 text-xs sm:text-sm text-gray-600 leading-relaxed">{guest.bio}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#00D1FF] mb-4">Lead Trainer</h2>
-          <div className="bg-white/10 rounded-lg p-6 border border-[#00D1FF]/30 flex gap-6 items-center">
-            <img src={program.overview.leadTrainer.photo} className="w-20 h-20 rounded-full object-cover border-2 border-[#FFD700]" />
+        {/* Lead Trainer */}
+        <section className="mb-14">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-1.5 h-6 rounded-full bg-gradient-to-b from-orange-500 to-amber-500" />
+            <h2 className="text-2xl font-bold text-black">Lead Trainer</h2>
+          </div>
+          <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm flex flex-col sm:flex-row gap-6 items-center">
+            <img src={program.overview.leadTrainer.photo} alt={program.overview.leadTrainer.name} className="w-24 h-24 rounded-2xl object-cover border-2 border-orange-400 shrink-0" />
             <div>
-              <h3 className="text-xl font-semibold text-[#FFD700]">{program.overview.leadTrainer.name}</h3>
-              <p className="text-[#00D1FF]">{program.overview.leadTrainer.title}</p>
-              <p className="text-gray-300 mt-2">{program.overview.leadTrainer.bio}</p>
+              <h3 className="text-xl font-bold text-black">{program.overview.leadTrainer.name}</h3>
+              <p className="text-sm font-semibold text-orange-600">{program.overview.leadTrainer.title}</p>
+              <p className="text-gray-600 text-sm mt-2 leading-relaxed">{program.overview.leadTrainer.bio}</p>
             </div>
           </div>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#00D1FF] mb-4">Core Team</h2>
+        {/* Core Team */}
+        <section className="mb-14">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-1.5 h-6 rounded-full bg-gradient-to-b from-orange-500 to-amber-500" />
+            <h2 className="text-2xl font-bold text-black">Program Coordination Team</h2>
+          </div>
           <div className="grid md:grid-cols-2 gap-6">
             {program.overview.coreTeam.map((member, index) => (
-              <div key={index} className="bg-white/10 rounded-lg p-4 border border-[#00D1FF]/20 flex items-center gap-4">
-                <img src={member.photo} alt={member.name} className="w-16 h-16 rounded-full object-cover border-2 border-[#FFD700]" />
+              <div key={index} className="bg-white rounded-2xl p-5 border border-gray-200 shadow-xs hover:shadow-sm flex items-center gap-4">
+                <img src={member.photo} alt={member.name} className="w-16 h-16 rounded-xl object-cover border-2 border-orange-300 shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold text-[#FFD700]">{member.name}</h3>
-                  <p className="text-[#00D1FF]">{member.title}</p>
+                  <h3 className="text-base font-bold text-black">{member.name}</h3>
+                  <p className="text-xs font-medium text-orange-600 mt-0.5">{member.title}</p>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#00D1FF] mb-4">Program Syllabus</h2>
-          <ul className="space-y-2">
+        {/* Program Syllabus */}
+        <section className="mb-14">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-1.5 h-6 rounded-full bg-gradient-to-b from-orange-500 to-amber-500" />
+            <h2 className="text-2xl font-bold text-black">Program Syllabus & Day Schedule</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {program.overview.syllabus.map((item, i) => (
-              <li key={i} className="flex items-center gap-2 text-gray-300">
-                <Brain className="text-[#FFD700]" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#00D1FF] mb-4">Sample Certificates</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {Object.entries(program.certificates).map(([key, url]) => (
-              <div key={key} className="bg-white/10 rounded-lg p-4 border border-[#00D1FF]/20">
-                <h3 className="text-lg font-semibold text-[#FFD700] mb-2">{key.replace(/^\w/, c => c.toUpperCase())} Certificate</h3>
-                <img src={url} alt={key} className="rounded w-full" />
+              <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-orange-50/50 border border-orange-200/70">
+                <Brain className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                <span className="text-sm font-semibold text-gray-900">{item}</span>
               </div>
             ))}
           </div>
         </section>
 
-        <section>
-          <h2 className="text-2xl font-bold text-[#00D1FF] mb-4">Registrations</h2>
+        {/* Sample Certificates */}
+        <section className="mb-14">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-1.5 h-6 rounded-full bg-gradient-to-b from-orange-500 to-amber-500" />
+            <h2 className="text-2xl font-bold text-black">Sample Certificates</h2>
+          </div>
           <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="text-xl font-semibold text-[#FFD700] mb-2">College Registrations</h3>
-              <iframe src={program.registrationSheets.colleges} className="w-full h-96 border border-[#00D1FF]/20 rounded" title="College Registrations"></iframe>
-              <a href={`${program.registrationSheets.colleges}&export=download`} className="block mt-3 text-[#00D1FF] underline" target="_blank">Download Excel</a>
+            {Object.entries(program.certificates).map(([key, url]) => (
+              <div key={key} className="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+                <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wider mb-3">
+                  {key.replace(/^\w/, c => c.toUpperCase())} Certificate
+                </h3>
+                <img src={url} alt={key} className="rounded-xl w-full border border-gray-100" />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Registrations Embed */}
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-1.5 h-6 rounded-full bg-gradient-to-b from-orange-500 to-amber-500" />
+            <h2 className="text-2xl font-bold text-black">Registration Status Sheets</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+              <h3 className="text-base font-bold text-gray-900 mb-3">College Registrations</h3>
+              <iframe src={program.registrationSheets.colleges} className="w-full h-96 border border-gray-200 rounded-xl" title="College Registrations" />
+              <a href={`${program.registrationSheets.colleges}&export=download`} className="inline-block mt-3 text-sm font-semibold text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">Download Spreadsheet</a>
             </div>
-            <div>
-              <h3 className="text-xl font-semibold text-[#FFD700] mb-2">Student Registrations</h3>
-              <iframe src={program.registrationSheets.students} className="w-full h-96 border border-[#00D1FF]/20 rounded" title="Student Registrations"></iframe>
-              <a href={`${program.registrationSheets.students}&export=download`} className="block mt-3 text-[#00D1FF] underline" target="_blank">Download Excel</a>
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+              <h3 className="text-base font-bold text-gray-900 mb-3">Student Registrations</h3>
+              <iframe src={program.registrationSheets.students} className="w-full h-96 border border-gray-200 rounded-xl" title="Student Registrations" />
+              <a href={`${program.registrationSheets.students}&export=download`} className="inline-block mt-3 text-sm font-semibold text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">Download Spreadsheet</a>
             </div>
           </div>
         </section>
