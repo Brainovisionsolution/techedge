@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatAlt {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.5s ease-in-out infinite;
+}
+
+.animate-float-alt {
+  animation: floatAlt 5.2s ease-in-out infinite;
+}
+
+@keyframes progressiveDraw {
+  0% {
+    stroke-dashoffset: 750;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes progressiveDrawVertical {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw-line {
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: progressiveDraw 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-draw-line-vertical {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: progressiveDrawVertical 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes progressiveDrawHills {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw-line-hills {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: progressiveDrawHills 2.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
